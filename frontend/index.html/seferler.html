@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/elements/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="colorlib">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Log on to codeastro.com for more projects -->
+	<!-- Site Title -->
+	<title>Sefer Kontrolü</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<!--CSS-->
+	<link rel="stylesheet" type="text/css"
+		href="http://localhost/BusTicket-CI/assets/frontend/datepicker/dcalendar.picker.css">
+			<link rel="stylesheet" href="http://localhost/BusTicket-CI/assets/frontend/css/linearicons.css">
+		<link rel="stylesheet" href="http://localhost/BusTicket-CI/assets/frontend/css/owl.carousel.css">
+        <link rel="stylesheet" href="http://localhost/BusTicket-CI/assets/frontend/css/font-awesome.min.css">
+        <link href="http://localhost/BusTicket-CI/assets/backend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="http://localhost/BusTicket-CI/assets/frontend/css/nice-select.css">
+		<link rel="stylesheet" href="http://localhost/BusTicket-CI/assets/frontend/css/magnific-popup.css">
+		<link rel="stylesheet" href="http://localhost/BusTicket-CI/assets/frontend/css/bootstrap.css">
+		<link rel="stylesheet" href="http://localhost/BusTicket-CI/assets/frontend/css/main.css">
+		<link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+		<link rel="stylesheet" type="text/css" href="http://localhost/BusTicket-CI/assets/datepicker/dist/css/bootstrap-datepicker.min.css">
+		<link href="http://localhost/BusTicket-CI/assets/frontend/select2/css/select2.min.css" rel="stylesheet" />
+		  <style type="text/css">
+			.body{
+				background-color: cornflowerblue;
+			}
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+             background-color: #fff; 
+        }
+
+        .pre {
+            border: 1px solid #fff ;
+            min-height: 10em;
+        }
+
+        .preloader .loading {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font: 14px arial;
+        }
+  </style></head>
+
+<body style="background-color: #fff;">
+	<!-- navbar -->
+	<header id="header" id="home" style="background-color:#007FFF"> 
+		    <div class="container">
+		    	<div class="row align-items-center justify-content-between d-flex">
+			      <div id="logo">
+			        <a href="index.html"><h3> <i class="fas fa-ticket-alt" style="color: white;"></i> <b style="color: azure;">Umuttepe Turizim</b></h3></a>
+			      </div>
+			      <nav id="nav-menu-container">
+			        <ul class="nav-menu">
+			          <li class="menu"><a href="index.html">Home</a></li>
+			          <li><a href="http://localhost/BusTicket-CI/tiket">Make Bookings</a></li>
+			          <li class="menu"><a href="http://localhost/BusTicket-CI/tiket/cektiket">Check Tickets</a></li>
+			            
+				  	  <li class="menu wobble animated"><a href="http://localhost/BusTicket-CI/login/Daftar">Kayıt Ol</a></li>
+ 					  <li><a href="http://localhost/BusTicket-CI/login">Login</a></li>
+				  	  			        </ul>
+			      </nav><!-- #nav-menu-container -->		    		
+		    	</div>
+		    </div>
+		  </header><!-- #header -->		<section class="service-area section-gap relative">
+		<div class="overlay overlay-bg" style="background-color:#fff"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<!-- Default Card Example -->
+					<div class="card mb-5">
+						<div class="card-header">
+							<i class="fas fa-search"></i> Bilet Ara 
+						</div>
+						<div class="card-body">
+							<div class="alert alert-warning" role="alert">
+								<p><b>IMPORTANT!!</b></p>
+								<P>Before Buying Tickets, Please have a look>> <b><i data-toggle="modal"
+											data-target="#exampleModal">How to book?</i></b></P>
+							</div>
+							<form action="http://localhost/BusTicket-CI/tiket/cekjadwal?>" method="get">
+								<div class="form-group">
+									<label for="exampleInputEmail1">Tarih Seç</label>
+									<input placeholder="Enter date" type="text" class="form-control datepicker"
+										name="tanggal" required="">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputEmail1">Kalkış</label>
+									<select name="asal" class="form-control js-example-basic-single" required>
+										<option value="" selected disabled="">Kalkış Seç</option>
+																				<option value="TJ019">
+											ADENABERT											- <br>AB Terminal </option>
+																				<option value="TJ010">
+											AGOCASTER											- <br>Caster Terminal </option>
+																				<option value="TJ008">
+											CRENTON											- <br>MicM Terminal </option>
+																				<option value="TJ017">
+											INASBRIDGE											- <br>IB Terminal </option>
+																				<option value="TJ015">
+											OFRUASWOOD											- <br>Ofruas Terminal </option>
+																				<option value="TJ007">
+											ONABRIDGE											- <br>Neo Terminal </option>
+																				<option value="TJ018">
+											OWODON											- <br>OD Terminal </option>
+																				<option value="TJ013">
+											PRIFPUS											- <br>Pusf Terminal </option>
+																				<option value="TJ009">
+											ROCVALE											- <br>ZX Terminal </option>
+																				<option value="TJ016">
+											SLEDMOUTH											- <br>Sled Terminal </option>
+																				<option value="TJ014">
+											WROMBURG											- <br>Wrom Terminal </option>
+																				<option value="TJ011">
+											YHIXPORT											- <br>Hixport Terminal </option>
+																				<option value="TJ012">
+											YLOUMORE											- <br>Loum Terminal </option>
+																			</select>
+								</div>
+								<div class="form-group">
+									<label for="exampleInputEmail1">Varış Seç</label> 
+									<select name="tujuan" class="form-control js-example-basic-single">
+										<option value="" selected disabled="">Choose Destination</option>
+																				<option value="Adenabert">
+											ADENABERT</option>
+																				<option value="Agocaster">
+											AGOCASTER</option>
+																				<option value="Crenton">
+											CRENTON</option>
+																				<option value="Inasbridge">
+											INASBRIDGE</option>
+																				<option value="Ofruaswood">
+											OFRUASWOOD</option>
+																				<option value="Onabridge">
+											ONABRIDGE</option>
+																				<option value="Owodon">
+											OWODON</option>
+																				<option value="Prifpus">
+											PRIFPUS</option>
+																				<option value="Rocvale">
+											ROCVALE</option>
+																				<option value="Sledmouth">
+											SLEDMOUTH</option>
+																				<option value="Wromburg">
+											WROMBURG</option>
+																				<option value="Yhixport">
+											YHIXPORT</option>
+																				<option value="Yloumore">
+											YLOUMORE</option>
+																			</select>
+								</div>
+								<a href="http://localhost/BusTicket-CI/tiket" class="btn btn-danger pull-left">Geri Dön</a>
+								<button type="submit" class="btn btn-primary pull-right">Ara</button> 
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="card mb-10">
+						<div class="card-header">
+							<i class="fas fa-info"></i> Kalkış Varış Listesi 
+						</div>
+						<div class="card-body">
+							<table class="table table-bordered table-condensed" style="font-size:12px;" id="mydata">
+								<thead>
+									<tr>
+										<th style="text-align:center;">Kalkış</th>
+										<th>Varış</th>
+									</tr>
+								</thead>
+								<tbody>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											 Kocaeli-06:00</td>
+										<td style="vertical-align:middle;">İstanbul-08:00</td> 
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											Kocaeli-14:00</td>
+										<td style="vertical-align:middle;">İstanbul-16:00</td> 
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											</td>
+										<td style="vertical-align:middle;"></td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											</td>
+										<td style="vertical-align:middle;"></td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											OFRUASWOOD</td>
+										<td style="vertical-align:middle;">Ofruas Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											ONABRIDGE</td>
+										<td style="vertical-align:middle;">Neo Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											OWODON</td>
+										<td style="vertical-align:middle;">OD Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											PRIFPUS</td>
+										<td style="vertical-align:middle;">Pusf Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											ROCVALE</td>
+										<td style="vertical-align:middle;">ZX Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											SLEDMOUTH</td>
+										<td style="vertical-align:middle;">Sled Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											WROMBURG</td>
+										<td style="vertical-align:middle;">Wrom Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											YHIXPORT</td>
+										<td style="vertical-align:middle;">Hixport Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											YLOUMORE</td>
+										<td style="vertical-align:middle;">Loum Terminal</td>
+									</tr>
+																	</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6" style="margin-top: -220px;"> 
+					<div class="card mb-10">
+						<div class="card-header">
+							<i class="fas fa-info"></i>Mola Yeri Bilgileri
+						</div>
+						<div class="card-body">
+							<table class="table table-bordered table-condensed" style="font-size:12px;" id="mydata">
+								<thead>
+									<tr>
+										<th style="text-align:center;">Sefer Bilgileri</th> 
+										<th>Mola Yeri</th>
+									</tr>
+								</thead>
+								<tbody>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											Kocaeli-İstanbul</td>
+										<td style="vertical-align:middle;">Yalova</td> 
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											AGOCASTER</td>
+										<td style="vertical-align:middle;">Caster Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											CRENTON</td>
+										<td style="vertical-align:middle;">MicM Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											INASBRIDGE</td>
+										<td style="vertical-align:middle;">IB Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											OFRUASWOOD</td>
+										<td style="vertical-align:middle;">Ofruas Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											ONABRIDGE</td>
+										<td style="vertical-align:middle;">Neo Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											OWODON</td>
+										<td style="vertical-align:middle;">OD Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											PRIFPUS</td>
+										<td style="vertical-align:middle;">Pusf Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											ROCVALE</td>
+										<td style="vertical-align:middle;">ZX Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											SLEDMOUTH</td>
+										<td style="vertical-align:middle;">Sled Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											WROMBURG</td>
+										<td style="vertical-align:middle;">Wrom Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											YHIXPORT</td>
+										<td style="vertical-align:middle;">Hixport Terminal</td>
+									</tr>
+																		<tr>
+										<td style="text-align:center;vertical-align:middle">
+											YLOUMORE</td>
+										<td style="vertical-align:middle;">Loum Terminal</td>
+									</tr>
+																	</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+			</div>
+	</section>
+	<!-- End banner Area -->
+	<!-- Log on to codeastro.com for more projects -->
+	<!-- start footer Area -->
+				<footer class="footer-area section-gap">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h4 class="text-white">Bilet Seç-Al</h4>
+								<p>
+								BUS Tickets is the largest online bus ticket booking service in the world. Trusted by more than 8 million customers globally. Bus Tickets offers booking bus tickets through the website.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h4 class="text-white">Contact Us</h4>
+								<p>
+
+								</p>
+								<p class="number">
+									012-0101-111-1001 <br>
+									012-1010-000-0110
+								</p>
+							</div>
+						</div>						
+						<div class="col-lg-5  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h4 class="text-white">Newsletter</h4>
+								<p>You can trust us. we only send  offers, not a single spam.</p>
+								<div class="d-flex flex-row" id="mc_embed_signup">
+										<form class="navbar-form" novalidate="true" action="" method="post">
+									    <div class="input-group add-on">
+									      	<input class="form-control" placeholder="Email address"  type="email">
+											<div style="position: absolute; left: -5000px;">
+												<input name="" tabindex="-1" value="" type="text">
+											</div>
+									      <div class="input-group-btn">
+									        <button class="genric-btn primary circle arrow"><span class="lnr lnr-arrow-right"></span></button>
+									      </div>
+									    </div>
+									      <div class="info mt-20"></div>									    
+									  </form>
+
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <p class="footer-text m-0"><span>&copy; 2024 Umuttepe Turizim Acentası </span> </p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			<!-- Log on to codeastro.com for more projects -->
+						<!-- <div class="footer-social d-flex align-items-center">
+							<a href="#"><i class="fas fa-facebook"></i></a>
+							<a href="#"><i class="fas fa-twitter"></i></a>
+							<a href="#"><i class="fas fa-dribbble"></i></a>
+							<a href="#"><i class="fas fa-behance"></i></a>
+						</div> -->
+					</div>
+				</div>
+			</footer>
+			<div class="preloader">
+			<div class="loading">
+				<img src="http://localhost/BusTicket-CI/assets/frontend/img/preloader.gif" width="100">
+				<p>Please Wait...</p>
+			</div>
+		</div>	
+			<!-- End footer Area -->	<!-- js -->
+
+	<script src="http://localhost/BusTicket-CI/assets/frontend/js/vendor/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="http://localhost/BusTicket-CI/assets/frontend/js/vendor/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+<script src="http://localhost/BusTicket-CI/assets/frontend/js/easing.min.js"></script>
+<script src="http://localhost/BusTicket-CI/assets/frontend/js/hoverIntent.js"></script>
+<script src="http://localhost/BusTicket-CI/assets/frontend/js/superfish.min.js"></script>
+<script src="http://localhost/BusTicket-CI/assets/frontend/js/jquery.ajaxchimp.min.js"></script>
+<script src="http://localhost/BusTicket-CI/assets/frontend/js/jquery.magnific-popup.min.js"></script>
+<script src="http://localhost/BusTicket-CI/assets/frontend/js/owl.carousel.min.js"></script>
+<script src="http://localhost/BusTicket-CI/assets/frontend/js/jquery.sticky.js"></script>
+<script src="http://localhost/BusTicket-CI/assets/frontend/js/jquery.nice-select.min.js"></script>
+<script src="http://localhost/BusTicket-CI/assets/frontend/js/parallax.min.js"></script>
+<script src="http://localhost/BusTicket-CI/assets/frontend/js/waypoints.min.js"></script>
+<script src="http://localhost/BusTicket-CI/assets/frontend/js/jquery.counterup.min.js"></script>
+<script src="http://localhost/BusTicket-CI/assets/frontend/js/mail-script.js"></script>
+<script src="http://localhost/BusTicket-CI/assets/frontend/js/main.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="http://localhost/BusTicket-CI/assets/frontend/select2/js/select2.min.js"></script>
+<script src="http://localhost/BusTicket-CI/assets/datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<script></script><!--Start of Tawk.to Script-->
+
+
+<!--End of Tawk.to Script-->
+<script type="text/javascript">
+	$(document).ready(function () {
+		$(".preloader").fadeOut();
+	})
+	$(":submit").click(function (e) {
+		window.addEventListener("beforeunload", function (event) {
+			$(".preloader").show();
+		});
+	});
+
+</script>
+
+
+
+	<script type="text/javascript">
+		$(function () {
+			var date = new Date();
+			date.setDate(date.getDate());
+
+			$(".datepicker").datepicker({
+				startDate: date,
+				format: 'yyyy-mm-dd',
+				autoclose: true,
+				todayHighlight: true,
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.js-example-basic-single').select2();
+		});
+	</script>
+</body>
+
+</html>
+<!-- Modal -->
+<!-- Log on to codeastro.com for more projects -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">How to book tickets?</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="table-responsive">
+					<ol class="ordered-list" align="justify"><span class="center_content2">
+					<li>Select date and select your origin and destination terminal/city in order to search for available schedules.
+							<li>Search for tickets then click on the <b>Select </b> button on the ticket you want to book.
+							</li>
+							<li>The system will redirect you to seat selection page where you have to <b>select any seats</b> [Max.4 seats at a time]</li>
+							<li>After selection of seats, click on the <b>Next </b>button to proceed. </li>
+							<li>Fill up your ticket details by providing customer's details such as Passenger's Name, Age and other required <b>Customer Identity</b>. With it, select any of the available bank [as a Payment Method] to book tickets.</li>
+							<li>After submitting the form, the bookings are done <b>[temporarily]</b>. The system will provide you with a <b>QR Code</b> and you've to make payments.</li>
+							<li>All the payment instructions are provided in the tickets page.</li>
+							<li>Following that, click on the <b>Payment Confirmation</b> button to submit your payment details with an attachment of <b>proof image</b>.</li>
+							<li>At last, you payment request will be sent for <b>verification</b>. </li>
+							<li>You will also receive an <b>E-Ticket</b> onces after the payment gets verified. </li>
+							<li>If you have made a payment, bring proof of payment at the time of departure and exchange it one hour before departure. </li>
+						</span></ol>
+					<w:worddocument></w:worddocument>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>

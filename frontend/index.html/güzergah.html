@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Güzergahlar</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
+      rel="stylesheet"
+    />
+    <link href="login.html" />
+  </head>
+  <style type="text/css">
+    .combined {
+      -webkit-text-stroke: 1px black;
+      color: white;
+      text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+        -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    .border-black {
+      color: blue;
+      /*border white with light shadow*/
+      text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+        1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+        1px 1px 5px #000;
+    }
+  </style>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .navbar .navbar-brand {
+      background-color: forestgreen;
+      width: 70%;
+    }
+
+    .left,
+    .right {
+      width: 60%; /* İki formun arasında boşluk bırakmak için genişlik ayarları */
+    }
+
+    form {
+      padding: -10px; /* Form içeriğini kenarlardan uzaklaştırmak için */
+      margin-top: 80px;
+      margin-left: 90px;
+    }
+    
+  </style>
+  <link
+    rel="stylesheet"
+    href="http://localhost/BusTicket-CI/assets/frontend/css/linearicons.css"
+  />
+  <link
+    rel="stylesheet"
+    href="http://localhost/BusTicket-CI/assets/frontend/css/owl.carousel.css"
+  />
+  <link
+    rel="stylesheet"
+    href="http://localhost/BusTicket-CI/assets/frontend/css/font-awesome.min.css"
+  />
+  <link
+    href="http://localhost/BusTicket-CI/assets/backend/vendor/fontawesome-free/css/all.min.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    rel="stylesheet"
+    href="http://localhost/BusTicket-CI/assets/frontend/css/nice-select.css"
+  />
+  <link
+    rel="stylesheet"
+    href="http://localhost/BusTicket-CI/assets/frontend/css/magnific-popup.css"
+  />
+  <link
+    rel="stylesheet"
+    href="http://localhost/BusTicket-CI/assets/frontend/css/bootstrap.css"
+  />
+  <link
+    rel="stylesheet"
+    href="http://localhost/BusTicket-CI/assets/frontend/css/main.css"
+  />
+  <link
+    rel="stylesheet"
+    href="http://anijs.github.io/lib/anicollection/anicollection.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="http://localhost/BusTicket-CI/assets/datepicker/dist/css/bootstrap-datepicker.min.css"
+  />
+  <link
+    href="http://localhost/BusTicket-CI/assets/frontend/select2/css/select2.min.css"
+    rel="stylesheet"
+  />
+
+  <body>
+    <header id="header" id="home">
+        <div class="container">
+          <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+              <a href="index.html" 
+                ><strong><b>Umuttepe Turizim</b></strong></h3></a
+              >
+            </div>
+            <nav id="nav-menu-container">
+              <ul class="nav-menu">
+                <li class="menu">
+                  <a href="file:///C:/Users/elifo/Desktop/BUS%20T%C4%B0CKET%20YAZ%20GEL(29%20MART)/Deneme/frontend/index.html/index.html">Home</a>
+                </li>
+                <li>
+                  <a href="http://localhost/BusTicket-CI/tiket">Güzergahlar</a>
+                </li>
+                <li class="menu">
+                  <a href="http://localhost/BusTicket-CI/tiket/cektiket"
+                    >Bilet Bilgileri</a
+                  >
+                </li>
+  
+                <li class="menu wobble animated">
+                  <a href="kayıt.html" 
+                    >Kayıt Ol</a 
+                  >
+                </li>
+                <li><a href="login.html">Login</a></li>
+                
+              </ul>
+            </nav>
+            <!-- #nav-menu-container -->
+          </div>
+        </div>
+      </header>
+    <div class="container">
+      <div class="left">
+        <form action="" method="post">
+          <label for="kalkış">Kalkış Noktası:</label>
+          <select id="kalkış" name="kalkış">
+            <option value="İzmir">İzmir</option>
+            <option value="İstanbul">İstanbul</option>
+            <option value="Kocaeli">Kocaeli</option>
+            <option value="Zonguldak">Zonguldak</option>
+          </select>
+        </form>
+      </div>
+    <div class="right">
+        <form action="" method="post">
+          <label>Varış Noktası:</label>
+          <select id="varış" name="varış">
+            <option value="İzmir">İzmir</option>
+            <option value="İstanbul">İstanbul</option>
+            <option value="Kocaeli">Kocaeli</option>
+            <option value="Zonguldak">Zonguldak</option>
+          </select>
+          
+        </form>
+        <button type="button" class="btn btn-primary"  style="margin-left: 280px; margin-top: -80px;">Güzergahı Getir</button>
+      </div>
+    </div>
+  </body>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"
+  ></script>
+</html>
