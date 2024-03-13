@@ -4,7 +4,7 @@
 		<!-- Mobile Specific Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<!-- Favicon-->
-		
+		<link rel="shortcut icon" href="img/elements/fav.png">
 		<!-- Author Meta -->
 		<meta name="author" content="colorlib">
 		<!-- Meta Description -->
@@ -13,9 +13,9 @@
 		<meta name="keywords" content="">
 		<!-- meta character set -->
 		<meta charset="UTF-8">
-		<!-- Site Title -->
 		<!-- Log on to codeastro.com for more projects -->
-		<title>Kayıt Ol</title>
+		<!-- Site Title -->
+		<title>Get Tickets</title>
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 		<!--CSS-->
 		<link rel="stylesheet" type="text/css" href="http://localhost/BusTicket-CI/assets/frontend/datepicker/dcalendar.picker.css">
@@ -38,7 +38,7 @@
             width: 100%;
             height: 100%;
             z-index: 9999;
-            background-color: #fff; 
+            /* background-color: #fff; */
         }
 
         .pre {
@@ -64,9 +64,9 @@
 			      </div>
 			      <nav id="nav-menu-container">
 			        <ul class="nav-menu">
-			          <li class="menu"><a href="index.html">Home</a></li> 
+			          <li class="menu"><a href="index.html">Home</a></li>
 			          <li><a href="güzergah.html">Güzergahlar</a></li>
-			          <li class="menu"><a href="http://localhost/BusTicket-CI/tiket/cektiket">Bilet Bilgileri</a></li>
+			          <li class="menu"><a href="seferler.html">Bilet Bilgileri</a></li>
 			            
 				  	  <li class="menu wobble animated"><a href="http://localhost/BusTicket-CI/login/Daftar">Kayıt Ol</a></li>
  					  <li><a href="http://localhost/BusTicket-CI/login">Login</a></li>
@@ -78,81 +78,41 @@
 			<div class="overlay overlay-bg"></div>
 			<div class="container">
 				<div class="row d-flex justify-content-center">
-					<div class="col-lg-8">
+					<div class="col-lg-6">
 						<!-- Default Card Example -->
-						<div class="card ">
-							<div class="card-header">
-								<i class="fas fa-user"></i> Müşteri Girişi 
-							</div>
-							<div class="card-body">
-								<form action="http://localhost/BusTicket-CI/login/daftar" method="post">
+						<div class="card wobble">
+					  <div class="card-header">
+					   <i class="fas fa-ticket"></i> Bileti Kontrol Et 
+					  </div>
+					  <div class="card-body">
+					    <form action="http://localhost/BusTicket-CI/tiket/cekorder" method="post">
 									<div class="form-group">
-										<div class="form-group">
-											<div class="form-label-group">
-												<input type="text" name="name" class="form-control" required="" placeholder="Full Name" value="">
-												<small class="text-danger pl-3"></small>											</div>
-										</div>
+										<label for="exampleInputEmail1">PNR Kodunu Girin</label>
+										<input type="text" id="" class="form-control" id="" name="kodetiket" placeholder="Ticket Code" required="">
 									</div>
-									<div class="form-group">
-										<div class="form-row">
-											<div class="col-md-6">
-												<div class="form-label-group">
-													<input type="text" name="email" class="form-control" required="" placeholder="Email" value="">
-													<small class="text-danger pl-3"></small>												</div>
-											</div>
-											<div class="col-md-6">
-												<div class="form-label-group">
-													<input type="number" id="nomor" name="nomor" class="form-control" required="" placeholder="Telefon Numarası" value="">
-													<small class="text-danger pl-3"></small>												</div>
-											</div>
-										</div>
-									</div>
-									<div class="form-group">
-										<label for="username">Address</label>
-										<div class="form-label-group">
-											<textarea class="form-control" name="alamat"></textarea>
-											<p class="text-danger pl-3"></p>										</div>
-									</div>
-									<div class="form-group">
-										<div class="form-label-group">
-											<input type="text" id="username" name="username" class="form-control" required="" placeholder="Username" >
-											<small class="text-danger pl-3"></small>										</div>
-									</div>
-									<div class="form-group row">
-										<div class="col-sm-6 mb-3 mb-sm-0">
-											<input type="password" class="form-control form-control-user" name="password1" placeholder="Password">
-										</div>
-										<div class="col-sm-6">
-											<input type="password" class="form-control form-control-user" name="password2" placeholder="Repeat Password">
-										</div>
-									</div>
-									<small class="text-danger pl-3"></small>									<button class="btn btn-info btn-block">Kayıt Ol</button>
+									<button type="submit" class="btn btn-success pull-right">Kontrol Et </button> 
 								</form>
-								<hr>
-								<div class="text-center">
-									<p>Already Registered? <a class="" href="http://localhost/BusTicket-CI/login">Login Now</a></p>
-								</div>
-							</div>
-						</div>
+					  </div>
 					</div>
-				</section>
-				<!-- End banner Area -->
-				<!-- Log on to codeastro.com for more projects -->
-				<!-- start footer Area -->
-							<footer class="footer-area section-gap">
+					</div>
+			</section>
+			<!-- End banner Area -->
+			
+			<!--footer Area --> 
+						<footer class="footer-area section-gap">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-3  col-md-6 col-sm-6">
 							<div class="single-footer-widget">
 								<h4 class="text-white">Bus Ticket Booking</h4>
 								<p>
-								BUS Tickets is the largest online bus ticket booking service in the world. Trusted by more than 8 million customers globally. Bus Tickets offers booking bus tickets through the website.
+								Umuttepe Turizim ile güvenli ve sağlıklı yolculuklar dileriz. 
 								</p>
 							</div>
 						</div>
 						<div class="col-lg-4  col-md-6 col-sm-6">
 							<div class="single-footer-widget">
-								<h4 class="text-white">Contact Us</h4>
+								<h4 class="text-white">Bizimle İletişime Geçin</h4>
 								<p>
 
 								</p>
@@ -186,15 +146,8 @@
 					</div>
 					<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            <p class="footer-text m-0"><span>&copy; 2024 Bus Ticket Booking System - Developed by Bahyu Sanciko </span> </p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-			<!-- Log on to codeastro.com for more projects -->
-						<!-- <div class="footer-social d-flex align-items-center">
-							<a href="#"><i class="fas fa-facebook"></i></a>
-							<a href="#"><i class="fas fa-twitter"></i></a>
-							<a href="#"><i class="fas fa-dribbble"></i></a>
-							<a href="#"><i class="fas fa-behance"></i></a>
-						</div> -->
+            <p class="footer-text m-0"><span>&copy; 2024 Umuttepe Turizim Seyehat Acentası </span> </p>			
+						
 					</div>
 				</div>
 			</footer>
@@ -204,8 +157,8 @@
 				<p>Please Wait...</p>
 			</div>
 		</div>	
-			<!-- End footer Area -->				<!-- js -->
-				<script src="http://localhost/BusTicket-CI/assets/frontend/js/vendor/jquery-2.2.4.min.js"></script>
+			<!-- End footer Area -->			<!-- js -->
+			<script src="http://localhost/BusTicket-CI/assets/frontend/js/vendor/jquery-2.2.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
 	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="http://localhost/BusTicket-CI/assets/frontend/js/vendor/bootstrap.min.js"></script>
@@ -227,7 +180,7 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="http://localhost/BusTicket-CI/assets/frontend/select2/js/select2.min.js"></script>
 <script src="http://localhost/BusTicket-CI/assets/datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<script>swal("Failed", "Incorrect Login Details!", "error");</script><!--Start of Tawk.to Script-->
+<script></script><!--Start of Tawk.to Script-->
 
 
 <!--End of Tawk.to Script-->
@@ -245,5 +198,5 @@
 
 
 
-			</body>
-		</html>
+		</body>
+	</html>
