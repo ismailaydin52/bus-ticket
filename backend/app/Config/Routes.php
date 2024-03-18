@@ -17,5 +17,6 @@ $routes->get('kayıtol','Home::kayıtol');
 $routes->get('login','Home::login');
 $routes->get('adminlogin','Home::adminlogin');
 $routes->get('login/forgetpassword','Home::forgetpassword');
+$routes->get('login/kullanıcı','Home::kullanıcı');
 
 

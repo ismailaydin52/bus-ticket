@@ -48,6 +48,9 @@ class Home extends BaseController
             echo "404 NOT Found";
     }
     }
+    public function kullanıcı(){
+        return view("kullanıcı");
+    }
 
 
 }
