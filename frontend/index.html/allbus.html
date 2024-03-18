@@ -7,14 +7,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Tüm Seferler</title> 
-    <!-- css -->
-    <!-- Custom fonts for this template-->
+
   <link href="http://localhost/BusTicket-CI/assets/backend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-  <!-- Custom styles for this template-->
   <link href="http://localhost/BusTicket-CI/assets/backend/css/sb-admin-2.min.css" rel="stylesheet">
-  <!-- Custom styles for this page -->
+  
   <link href="http://localhost/BusTicket-CI/assets/backend/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
   <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
   <link rel="stylesheet" type="text/css" href="http://localhost/BusTicket-CI/assets/datepicker/dist/css/bootstrap-datepicker.min.css">
@@ -65,25 +63,25 @@
       <li class="nav-item">
         <a class="nav-link" href="http://localhost/BusTicket-CI/backend/home">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard </span></a>
+          <span>Admin Sayfası</span></a>
           <a class="nav-link" href="http://localhost/BusTicket-CI/backend/bus">
             <i class="fas fa fa-bus"></i>
-            <span>Manage Bus</span></a>
+            <span>Toplam Yolcu Sayısı</span></a>
             <a class="nav-link" href="http://localhost/BusTicket-CI/backend/rute">
               <i class="fas fa fa-compass"></i>
-              <span>Manage Terminal</span></a>
+              <span>Sefer Sayıları</span></a>
               <a class="nav-link" href="http://localhost/BusTicket-CI/backend/jadwal">
                 <i class="fas fa fa-clipboard-list"></i>
-                <span>Manage Schedule</span></a>
+                <span>Şöfor Listesi</span></a>
         <a class="nav-link" href="http://localhost/BusTicket-CI/backend/order">
           <i class="fas fa-bookmark"></i>
-          <span>List Bookings</span></a>
+          <span>Sefer Oluştur</span></a> 
         <a class="nav-link" href="http://localhost/BusTicket-CI/backend/tiket">
           <i class="fas fa-ticket-alt"></i>
-          <span>Tickets</span></a>
+          <span>Biletler</span></a>
         <a class="nav-link" href="http://localhost/BusTicket-CI/backend/konfirmasi">
           <i class="fa fa-dollar-sign"></i>
-          <span>Payments List</span></a>
+          <span>Ödeme Listesi</span></a>
               </li>
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
@@ -126,12 +124,10 @@
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
 
-            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
             <li class="nav-item dropdown no-arrow d-sm-none">
               <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-search fa-fw"></i>
               </a>
-              <!-- Dropdown - Messages -->
               <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
                 <form class="form-inline mr-auto w-100 navbar-search">
                   <div class="input-group">
@@ -146,14 +142,13 @@
               </div>
             </li>
 
-            
             <div class="topbar-divider d-none d-sm-block"></div>
 
-            <!-- Nav Item - User Information -->
+
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
-                <img class="img-profile rounded-circle" src="http://localhost/BusTicket-CI/">
+                <img class="img-profile rounded-circle" src="http://localhost/myci5/public/">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -172,11 +167,8 @@
           </ul>
 
         </nav>
-        <!-- End of Topbar -->
-    <!-- Begin Page Content -->
     <div class="container-fluid">
-      <h1 class="h5 text-gray-800">Sefer Listesi</h1> 
-      <!-- DataTales -->
+      <h1 class="h5 text-gray-800">Tüm Seferler</h1>
       <div class="card shadow mb-4">
         <div class="card-header py-3">
           <button type="button" class="btn btn-success pull-right" data-toggle="modal" data-target="#ModalTujuan">
@@ -188,105 +180,115 @@
             <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
             <thead class="thead-dark">
                 <tr>
-                  <th>#</th>
-                  <th>Bus Code</th>
-                  <th>Bus Name</th>
-                  <th>Bus Plate</th>
-                  <th>Seat Capacity</th>
-                  <th>Status</th>
-                  <th>Action</th>
+                  <th>Sefer ID</th>
+                  <th>Kalkış-Varış Yeri</th> 
+                  <th>Yolcu Sayısı</th>
+                  <th>Araba Plakası</th>
+                  <th>Koltuk Kapasitesi</th>
+                  <th>Aktiflik</th>
+                  <th>Ayrıntılar</th> 
                 </tr>
               </thead>
               <tbody>
                                 <tr>
                   <td>1</td>
-                  <td>B008</td>
-                  <td>ALLIANCE TOURS
+                  <td>İstanbul-İzmir</td>
+                  <td>200</td>
+                  <td>34 ABC 234</td>
+                  <td>200</td>
+                                      <td class="btn-success"> Active</td> 
+                                      <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B010" class="btn btn btn-info">View</a></a>
+                </td>
+              </tr>
+                              <tr>
+                  <td>2</td>
+                  <td>Kocaeli-Zonguldak</td>
+                  <td>150
 </td>
-                  <td>CA0258</td>
-                  <td>23</td>
+                  <td>41 ZCX 644 </td>
+                  <td>150</td>
                                       <td class="btn-success"> Active</td> 
                                       <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B008" class="btn btn btn-info">View</a></a>
                 </td>
               </tr>
                               <tr>
-                  <td>2</td>
-                  <td>B005</td>
-                  <td>CRYSTENNA COACH
+                  <td>7</td>
+                  <td>İstanbul-Kocaeli</td>
+                  <td>50
 </td>
-                  <td>CA1234</td>
-                  <td>23</td>
+                  <td>35 XYZ 225</td>
+                  <td>50</td>
                                       <td class="btn-success"> Active</td> 
                                       <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B005" class="btn btn btn-info">View</a></a>
                 </td>
               </tr>
                               <tr>
-                  <td>3</td>
-                  <td>B003</td>
-                  <td>EXPRESS PLANET</td>
-                  <td>CA6969</td>
-                  <td>23</td>
+                  <td>8</td>
+                  <td>İstanbul-İzmir</td>
+                  <td>400</td>
+                  <td>34 ABC 234</td>
+                  <td>400</td>
                                       <td class="btn-success"> Active</td> 
                                       <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B003" class="btn btn btn-info">View</a></a>
                 </td>
               </tr>
                               <tr>
-                  <td>4</td>
-                  <td>B006</td>
-                  <td>IMPERIA</td>
-                  <td>CA7777</td>
-                  <td>23</td>
+                  <td>10</td>
+                  <td>İstanbul-İzmir</td>
+                  <td>400</td>
+                  <td>34 ABC 234</td>
+                  <td>400</td> 
                                       <td class="btn-success"> Active</td> 
                                       <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B006" class="btn btn btn-info">View</a></a>
                 </td>
               </tr>
                               <tr>
-                  <td>5</td>
-                  <td>B001</td>
-                  <td>NOMADIC TOURS</td>
-                  <td>CA1100</td>
-                  <td>23</td>
+                  <td>11</td>
+                  <td>Kocaeli-İzmir</td>
+                  <td>200</td>
+                  <td>41 DEF 534</td>
+                  <td>200</td>
                                       <td class="btn-success"> Active</td> 
                                       <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B001" class="btn btn btn-info">View</a></a>
                 </td>
               </tr>
                               <tr>
-                  <td>6</td>
-                  <td>B002</td>
-                  <td>SONIC TRAVELS</td>
-                  <td>CA5656</td>
-                  <td>23</td>
+                  <td>15</td>
+                  <td>İstanbul-Kocaeli</td>
+                  <td>350</td>
+                  <td>35 XYZ 225</td>
+                  <td>350</td>
                                       <td class="btn-success"> Active</td> 
                                       <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B002" class="btn btn btn-info">View</a></a>
                 </td>
               </tr>
                               <tr>
-                  <td>7</td>
-                  <td>B007</td>
-                  <td>TRICTON EXPRESS</td>
-                  <td>CA8520</td>
-                  <td>23</td>
+                  <td>27</td>
+                  <td>Zonguldak-Kocaeli</td>
+                  <td>320</td>
+                  <td>67 AGF 225</td>
+                  <td>320</td>
                                       <td class="btn-success"> Active</td> 
                                       <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B007" class="btn btn btn-info">View</a></a>
                 </td>
               </tr>
                               <tr>
-                  <td>8</td>
-                  <td>B004</td>
-                  <td>WHEELCLAP COACH
+                  <td>29</td>
+                  <td>Zonguldak-İstanbul</td>
+                  <td>155
 </td>
-                  <td>CA0007</td>
-                  <td>23</td>
+                  <td>67 FGC 775</td>
+                  <td>155</td>
                                       <td class="btn-success"> Active</td> 
                                       <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B004" class="btn btn btn-info">View</a></a>
                 </td>
               </tr>
                               <tr>
-                  <td>9</td>
-                  <td>B009</td>
-                  <td>ZERON TRAVELS</td>
-                  <td>CASTR0</td>
-                  <td>23</td>
+                  <td>31</td>
+                  <td>İzmir-İstanbul</td>
+                  <td>45</td>
+                  <td>35 TMS 688</td>
+                  <td>45</td>
                                       <td class="btn-success"> Active</td> 
                                       <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B009" class="btn btn btn-info">View</a></a>
                 </td>
@@ -296,24 +298,19 @@
         </div>
       </div>
     </div>
-    <!-- /.container-fluid -->
+    
   </div>
-  <!-- /.container-fluid -->
 </div>
-<!-- End of Main Content -->
-
 <footer class="sticky-footer bg-white">
 	<div class="container my-auto">
 		<div class="copyright text-center my-auto">
-			<span>&copy; 2024 Umuttepe Seyehat Acentası </span>
+			<span>&copy; 2024 Umuttepe Turizim Seyehat Acentası </span> 
 		</div>
 	</div>
 </footer>
 </div>
 <!-- End of Content Wrapper -->
 </div>
-<!-- End of Page Wrapper -->
-<!-- Scroll to Top Button-->
 <a class="scroll-to-top rounded" href="#page-top">
 	<i class="fas fa-angle-up"></i>
 </a>
@@ -339,15 +336,15 @@
 <div class="preloader">
 	<div class="loading">
 		<img src="http://localhost/BusTicket-CI/assets/frontend/img/preloader.gif" width="100">
-		<p>Please Wait...</p>
+		<p>Lütfen Bekleyin...</p>
 	</div>
 </div><!-- End of Footer -->
-<!-- Modal -->
+
 <div class="modal fade" id="ModalTujuan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog" role="document">
 <div class="modal-content">
   <div class="modal-header">
-    <h5 class="modal-title" id="exampleModalLabel">Add Bus</h5>
+    <h5 class="modal-title" id="exampleModalLabel">Otobüs Ekle</h5> 
     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
     <span aria-hidden="true">&times;</span>
     </button>
@@ -355,42 +352,39 @@
   <div class="modal-body">
     <form action="http://localhost/BusTicket-CI/backend/bus/tambahbus" method="post">
       <div class="form-group">
-        <label for="platbus" class="">Bus Name</label>
+        <label for="platbus" class="">  Otobüs Adı</label>
         <input type="text" class="form-control" name="nama_bus" placeholder="Bus Name">
       </div>
       <div class="form-group">
-        <label for="platbus" class="">Bus Number Plate</label>
+        <label for="platbus" class="">Otobüs Plaka</label>
         <input type="text" class="form-control" name="plat_bus" placeholder="Bus Plate">
       </div>
       <div class="form-group">
-        <label for="seat" class="">Number of Seats (Max.23)</label>
+        <label for="seat" class="">Yolcu Kapasitesi</label>
         <input type="number" class="form-control" id="seat" name="seat" placeholder="[Maximum 23]">
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        <button class="btn btn-success">Save</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+        <button class="btn btn-success">Kaydet</button>
       </div>
     </form>
   </div>
 </div>
 </div>
 </div>
-<!-- js -->
-<!-- Bootstrap core JavaScript-->
 <script src="http://localhost/BusTicket-CI/assets/backend/vendor/jquery/jquery.min.js"></script>
 <script src="http://localhost/BusTicket-CI/assets/backend/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-<!-- Core plugin JavaScript-->
+
 <script src="http://localhost/BusTicket-CI/assets/backend/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<!-- Custom scripts for all pages-->
 <script src="http://localhost/BusTicket-CI/assets/backend/js/sb-admin-2.min.js"></script>
 
-<!-- Page level plugins -->
+
 <script src="http://localhost/BusTicket-CI/assets/backend/vendor/datatables/jquery.dataTables.min.js"></script>
 <script src="http://localhost/BusTicket-CI/assets/backend/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<!-- Page level custom scripts -->
+
 <script src="http://localhost/BusTicket-CI/assets/backend/js/demo/datatables-demo.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="http://localhost/BusTicket-CI/assets/datepicker/dist/js/bootstrap-datepicker.min.js"></script>
@@ -412,13 +406,13 @@
 	<div class="modal-dialog" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">About Project</h5>
+				<h5 class="modal-title" id="exampleModalLabel"></h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 			<div class="modal-body">
-		  <br>
+				Umuttepe Turizim Seyehat Acentası <br>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>

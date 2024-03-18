@@ -18,5 +18,7 @@ $routes->get('login','Home::login');
 $routes->get('adminlogin','Home::adminlogin');
 $routes->get('login/forgetpassword','Home::forgetpassword');
 $routes->get('login/kullanıcı','Home::kullanıcı');
+$routes->get('admin/allbus','Home::allbus');
+
 
 

@@ -51,6 +51,9 @@ class Home extends BaseController
     public function kullanıcı(){
         return view("kullanıcı");
     }
+    public function allbus(){
+        return view("allbus");
+    }
 
 
 }

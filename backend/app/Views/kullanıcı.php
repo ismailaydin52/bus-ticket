@@ -317,13 +317,6 @@
 					</div>
 					<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
             <p class="footer-text m-0"><span>© 2024 Umuttepe Turizim Seyehat Acentası </span> </p> 
-      
-						<!-- <div class="footer-social d-flex align-items-center">
-							<a href="#"><i class="fas fa-facebook"></i></a>
-							<a href="#"><i class="fas fa-twitter"></i></a>
-							<a href="#"><i class="fas fa-dribbble"></i></a>
-							<a href="#"><i class="fas fa-behance"></i></a>
-						</div> -->
 					</div>
 				</div>
 			</footer>

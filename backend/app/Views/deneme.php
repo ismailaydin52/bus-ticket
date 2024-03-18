@@ -133,7 +133,7 @@
                 <a href="http://localhost/myci5/public/">Home</a>
               </li>
               <li>
-                <a href="http://localhost/myci5/public/g%C3%BCzergahlar">Güzergahlar</a>
+                <a href="http://localhost/myci5/public/güzergahlar">Güzergahlar</a>
               </li>
               <li class="menu">
                 <a href="http://localhost/myci5/public/seferkontrol" 
@@ -142,7 +142,7 @@
               </li>
 
               <li class="menu wobble animated">
-                <a href="http://localhost/myci5/public/kay%C4%B1tol" 
+                <a href="http://localhost/myci5/public/kayıtol" 
                   >Kayıt Ol</a 
                 >
               </li>
