@@ -163,6 +163,7 @@
           </select>
         </form>
 
+        <button type="button" class="btn btn-primary" onclick="getRoute()">Güzergahı Getir</button>
 
 
 
@@ -176,15 +177,12 @@
             var selectedValueKalk = document.getElementById("kalkis").value;
             var selectedValueVar = document.getElementById("varis").value;
 
-             // Seçilen değeri konsola yazdır
-            // Burada seçilen değeri bir değişkene atayabilirsiniz
-            // Örneğin:
             // var secilen = selectedValue;
             var baslangic = selectedValueKalk;
             var varis = selectedValueVar;
           }
       
-          // Formdaki seçim değişikliğini dinlemek için bir olay dinleyici ekleyin
+          // Formdaki seçim değişikliğini dinlemek için bir olay dinleyici 
           document.getElementById("kalkis").addEventListener("change", getSelectedValue);
           document.getElementById("varis").addEventListener("change", getSelectedValue);
 
@@ -224,7 +222,6 @@ temizleButonu.addEventListener("click", () => {
   });
 });
 </script>
-<button type="button" class="btn btn-primary" onclick="getRoute()">Güzergahı Getir</button>
       </div>
     </div>
 
