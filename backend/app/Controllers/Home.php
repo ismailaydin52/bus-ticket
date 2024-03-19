@@ -44,16 +44,22 @@ class Home extends BaseController
             return view('forgetpassword');
         }
         else{
-            //404 hatası ver
+            
             echo "404 NOT Found";
+        }
     }
-    }
-    public function kullanıcı(){
-        return view("kullanıcı");
-    }
+
     public function allbus(){
-        return view("allbus");
+
+        return view('allbus'); 
     }
+    public function busdetail(){
+        return view('busdetail');
+    }
+   
+
+   
+   
 
 
 }
