@@ -4,6 +4,8 @@
     <title>Güzergahlar</title>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJTVsBHAKFJS3yX0JWGEZ_ZAUJ7j8Lo8o&libraries=places"></script>
 
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
       rel="stylesheet"
@@ -140,11 +142,11 @@
 
 
       <!-- güzergah seç  -->
-    <div class="container">
+    <div class="container flex flex-row justify-center align-center w-full h-full">
       <div class="left">
         <form action="" method="post">
           <label for="kalkis">Kalkış Noktası:</label>
-          <select id="kalkis" name="kalkis">
+          <select id="kalkis" name="kalkis" class="px-2 py-[5px] bg-slate-300 rounded-lg">
             <option value="İzmir">İzmir otogar</option>
             <option value="İstanbul">İstanbul harem otogar</option>
             <option value="Kocaeli">Kocaeli otogar</option>
@@ -155,21 +157,13 @@
     <div class="right">
         <form action="" method="post">
           <label>Varış Noktası:</label>
-          <select id="varis" name="varis">
+          <select id="varis" name="varis" class="px-2 py-[5px] bg-slate-300 rounded-lg">
             <option value="İzmir">İzmir otogar</option>
             <option value="İstanbul">İstanbul harem otogar</option>
             <option value="Kocaeli">Kocaeli otogar</option>
-            <option value="Zonguldak">Zonguldak </option>
+            <option value="Zonguldak">Zonguldak otogar</option>
           </select>
         </form>
-
-        <button type="button" class="btn btn-primary" onclick="getRoute()">Güzergahı Getir</button>
-
-
-
-
-
-
 
         <script>
           // Formdaki seçim değiştiğinde bu fonksiyon çalışır
@@ -222,7 +216,9 @@ temizleButonu.addEventListener("click", () => {
   });
 });
 </script>
-      </div>
+    </div>
+    <button type="button" class="btn btn-primary " onclick="getRoute()">Güzergahı Getir</button>
+
     </div>
 
   <div id="map" style="height: auto; width: 100%;"  class="container"></div>
