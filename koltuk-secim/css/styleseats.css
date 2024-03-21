@@ -1,0 +1,226 @@
+html,
+body {
+    height: 100%;
+    ;
+    width: 100%;
+    ;
+}
+
+body {
+    max-height: 100%;
+    overflow: auto;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    
+    /* Yeni arka plan resmi */
+    background-image: url('arkaplan.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #e5e3e3;
+    overflow-x: hidden;
+}
+
+a {
+    color: #b71a4c;
+}
+
+.wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    width: 40%;
+    text-align: left;
+}
+
+.booking-details {
+    text-align: left;
+    font-size: 12px;
+    padding: 4.5em;
+    margin-top: 4em;
+}
+
+.booking-details h2 {
+    margin: 25px 0 20px 0;
+    font-size: 17px;
+}
+
+.booking-details h3 {
+    margin: 5px 5px 0 0;
+    font-size: 14px;
+}
+
+div.seatCharts-cell {
+    color: #1a1c1e;
+    height: 3em;
+    width: 3em;
+    line-height: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
+div.seatCharts-seat {
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+div.seatCharts-row {
+    height: 5em;
+}
+
+div.seatCharts-seat.available {
+    background: rgb(156, 195, 222);
+}
+
+div.seatCharts-seat.available.first-class {
+    background: rgb(178, 64, 212);
+    background: radial-gradient(circle, rgba(178, 64, 212, 1) 0%, rgba(137, 26, 158, 1) 25%, rgba(118, 12, 149, 1) 50%, rgba(126, 17, 149, 1) 75%, rgba(94, 2, 121, 1) 100%);
+}
+
+div.seatCharts-seat.focused {
+    background: rgb(219, 215, 215);
+    background: radial-gradient(circle, rgba(219, 215, 215, 1) 0%, rgba(205, 205, 205, 1) 25%, rgba(195, 192, 192, 1) 50%, rgba(204, 204, 204, 1) 75%, rgba(207, 207, 207, 1) 100%);
+    color: #1a1c1e
+}
+
+div.seatCharts-seat.selected {
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    text-shadow: 2px 2px 5px #000;
+}
+
+div.seatCharts-seat.unavailable {
+    background: rgb(252, 121, 121);
+    background: radial-gradient(circle, rgba(252, 121, 121, 1) 0%, rgba(249, 81, 81, 1) 25%, rgba(231, 53, 53, 1) 50%, rgba(255, 24, 24, 1) 75%, rgba(217, 6, 6, 1) 100%);
+}
+
+div.seatCharts-seat.unavailablewoman {
+    background: rgb(252, 121, 121);
+}
+
+div.seatCharts-seat.unavailableman {
+    background: blue;
+}
+
+div.seatCharts-legend {
+    padding-left: 0px;
+    bottom: 16px;
+}
+
+ul.seatCharts-legendList {
+    padding-left: 0px;
+}
+
+span.seatCharts-legendDescription {
+    margin-left: 5px;
+    line-height: 30px;
+}
+
+
+
+#selected-seats {
+    min-height: 10em;
+    overflow-y: scroll;
+    background: #fff;
+    padding: 0.5em 1em;
+    overflow: auto;
+}
+
+ul#selected-seats:empty:after {
+    content: "Lutfen koltuk secimi yapiniz";
+    color: #6c6c6c;
+}
+
+ul#selected-seats>li {
+    color: #000;
+    list-style: none;
+}
+
+.text-muted {
+    color: rgb(255 252 252);
+    text-shadow: 2px 2px 5px #000;
+}
+
+.text-center {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-bolder {
+    font-weight: bolder;
+}
+
+.row {
+    --bs-gutter-x: 0.5rem;
+    --bs-gutter-y: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.grid-30 {
+    flex: 0 0 auto;
+    width: 30%;
+}
+
+div.seatCharts-space {
+    background-color: transparent;
+    color: #fff !important;
+}
+
+li.seatCharts-legendItem {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 5em;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
