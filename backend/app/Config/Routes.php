@@ -19,6 +19,9 @@ $routes->get('adminlogin','Home::adminlogin');
 $routes->get('login/forgetpassword','Home::forgetpassword');
 $routes->get('admin/allbus','Home::allbus');
 $routes->get('admin/busdetail','Home::busdetail');
+$routes->get('admin/soforliste','Home::soforliste');
+$routes->get('güzergahlar/odeme','Home::odeme');
+$routes->get('admin/adminseferler','Home::adminseferler');
 
 
 

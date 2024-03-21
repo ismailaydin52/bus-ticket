@@ -56,6 +56,15 @@ class Home extends BaseController
     public function busdetail(){
         return view('busdetail');
     }
+    public function soforliste(){
+        return view('soforliste');
+    }
+    public function odeme(){
+        return view('odeme');
+    }
+    public function adminseferler(){
+        return view('adminseferler');
+    }
    
 
    
