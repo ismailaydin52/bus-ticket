@@ -216,7 +216,7 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="http://localhost/BusTicket-CI/assets/frontend/select2/js/select2.min.js"></script>
 <script src="http://localhost/BusTicket-CI/assets/datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<script>swal("Failed", "Incorrect Login Details!", "error");</script><!--Start of Tawk.to Script-->
+
 
 <script type="text/javascript">
 	$(document).ready(function () {
