@@ -322,7 +322,7 @@ INSERT INTO açığa_alınan_biletler(TC_Kimlik_Numarası, Açık_Bilet_ID,Gidil
 INSERT INTO açığa_alınan_biletler(TC_Kimlik_Numarası, Açık_Bilet_ID,Gidilen_Yer) values(22344477711,5,"İzmir"); 
 
 
--- bANLARIN GUCUNU tESTME Adına
+
 
 
 
