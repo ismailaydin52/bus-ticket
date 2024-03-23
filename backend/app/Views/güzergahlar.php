@@ -130,7 +130,7 @@
                     >Kayıt Ol</a 
                   >
                 </li>
-                <li><a href="http://localhost/myci5/public/login">Login</a></li> 
+                <li><a href="http://localhost/myci5/public/login">giriş</a></li> 
                 
               </ul>
             </nav>
@@ -139,12 +139,9 @@
         </div>
       </header>
 
-
-
-
       <!-- güzergah seç  -->
     <div class="container flex flex-row justify-center align-center w-full h-full">
-      <div class="left">
+      <div class="left" >
         <form action="" method="post">
           <label for="kalkis">Kalkış Noktası:</label>
           <select id="kalkis" name="kalkis" class="px-2 py-[5px] bg-slate-300 rounded-lg">
@@ -155,7 +152,7 @@
           </select>
         </form>
       </div>
-    <div class="right">
+    <div class="right" >
         <form action="" method="post">
           <label>Varış Noktası:</label>
           <select id="varis" name="varis" class="px-2 py-[5px] bg-slate-300 rounded-lg">
@@ -165,6 +162,7 @@
             <option value="Zonguldak">Zonguldak otogar</option>
           </select>
         </form>
+        <button type="button" class="btn btn-primary "  onclick="getRoute()">Güzergahı Getir</button>
 
         <script>
           // Formdaki seçim değiştiğinde bu fonksiyon çalışır
@@ -180,21 +178,10 @@
           // Formdaki seçim değişikliğini dinlemek için bir olay dinleyici 
           document.getElementById("kalkis").addEventListener("change", getSelectedValue);
           document.getElementById("varis").addEventListener("change", getSelectedValue);
-
         </script>
-
-
-
-
-
-
           <script>
             const kalkisNoktasi = document.getElementById("kalkis");
             const varisNoktasi = document.getElementById("varis");
-
-           
-
-
 
 kalkisNoktasi.addEventListener("change", () => {
   const secilenSehir = kalkisNoktasi.value;
@@ -218,14 +205,8 @@ temizleButonu.addEventListener("click", () => {
 });
 </script>
     </div>
-    <button type="button" class="btn btn-primary " onclick="getRoute()">Güzergahı Getir</button>
-
     </div>
-
   <div id="map" style="height: auto; width: 100%;"  class="container"></div>
-
-
-
 
   </body>
   <link
