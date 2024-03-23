@@ -140,7 +140,7 @@
       </header>
 
       <!-- güzergah seç  -->
-    <div class="container flex flex-row justify-center align-center w-full h-full">
+    <div class="container flex flex-row justify-center align-center w-full h-full" style="margin-left:15%;">
       <div class="left" >
         <form action="" method="post">
           <label for="kalkis">Kalkış Noktası:</label>
@@ -162,7 +162,105 @@
             <option value="Zonguldak">Zonguldak otogar</option>
           </select>
         </form>
+        </div>  
+    </div>
+        <div style="margin-left:30% ; margin-top:5%;">
+
         <button type="button" class="btn btn-primary "  onclick="getRoute()">Güzergahı Getir</button>
+        <button type="button" class="btn btn-primary " style="margin-left: 30%;" onclick="">seferleri göster</button>
+        </div>
+      
+
+        <div class="custom-container" >
+    <h2>Veri Seçimi</h2>
+    <div class="custom-scrollable-container">
+      <div class="custom-scrollable-content">
+      <div class="row">
+
+<div class="block">
+    <h2>merhaba</h2>
+</div>
+<div class="block">
+    <h2>merhaba</h2>
+</div>
+<div class="block">
+    <h2>merhaba</h2>
+</div>
+
+</div>
+      </div>
+    </div>
+    <button type="submit">koltuk seç</button>
+</div>
+        
+<style>
+  .block {
+overflow: hidden;
+background: #ffff;
+padding: 1rem;
+margin: 0 0 1rem 0;
+}
+
+.block h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+
+
+
+  .custom-container {
+  max-width: 200%;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.custom-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-container h2 {
+  margin-bottom: 20px;
+}
+
+.custom-scrollable-container {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.custom-scrollable-content {
+  padding: 10px;
+}
+
+.custom-scrollable-content label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+</style>
+
+
+      
+      
 
         <script>
           // Formdaki seçim değiştiğinde bu fonksiyon çalışır
