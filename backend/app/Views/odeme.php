@@ -1,124 +1,100 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Umuttepe Turizim Ödeme Sayfası</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Umuttepe Turizim Ödeme Sayfası</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        margin-top: 50px;
+      }
+      h1 {
+        color: #007bff;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        font-weight: bold;
+        color: #333;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
   </head>
   <body>
-    <div class="container shadow mt-3 mb-2 main">
-        <div class="row">
-            <h1>Ödeme Sayfası</h1><hr><br>
-        </div>
-        <div class="row">
-            <form>
-                <div class="row">
-                    <div class="col-md-6 form-group">
-                        <label>Ad-Soyad</label>
-                        <input type="text" class="form-control" id="name">
-                        <small class="form-text text-muted">Kart sahibinin adı ve soyadı</small>
-                    </div>
-                    <div class="col-md-6 form-group">
-                        <label>Kart Numarası</label>
-                        <input type="text" class="form-control" id="card-number">
-                        <small class="form-text text-muted">Kart numaranızı girin</small>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 form-group">
-                        <label>Month</label>
-                        <input type="text" class="form-control" id="sktarih-ay" placeholder="Son Kullanma Tarihi"> 
-                        <small class="form-text text-muted">Kartın Son Kullanma Tarihi(Last Month)</small> 
-                    </div>
-                    <div class="col-md-4 form-group">
-                        <label>Year</label>
-                        <input type="text" class="form-control" id="sktarih-yil">
-                        <small class="form-text text-muted">Kredi kartının son kullanma tarihi - Yıl</small> 
-                    </div>
-                    <div class="col-md-4 form-group">
-                        <label>CVV</label>
-                        <input type="text" class="form-control" id="cvv" placeholder="CVV">
-                        <small class="form-text text-muted">Kredi kartının arkasında bulunan 3 haneli güvenlik kodu</small>
-                    </div>
-                </div><br>
-                <div class="mb-4">
-                    <button type="submit" class="btn btn-primary">
-                        Kredi Kartıyla Öde
-                    </button>
-                    
-                </div>
-            </form>
-        </div>
-        <br>
-        <div class="credit-card-wrap mt-4">
-            <div class="mk-icon-world-map"></div>
-            <div class="credit-card-inner">
-                <header class="header">
-                    <div class="credit-logo">
-                        <div class="shape"><span class="txt"></span></div> <span class="text">Umuttepe Turizim</span>
-                    </div>
-                </header>
-                <div class="mk-icon-sim"></div>
-                <div class="credit-font credit-card-number"></div>
-                <footer class="footer">
-                    <div class="clearfix">
-                        <div class="pull-left">
-                            <div class="credit-card-date"><span class="title">Son Kullanma Tarihi<br>AY / YIL</span><span class="credit-font">  <span class="skt-ay"></span> / <span class="skt-yil"></span> </span></div>
-                            <div class="credit-font credit-author"></div>
-                        </div>
-                        <div class="pull-right"><i class="carttype fab" style="font-size: 45px; color:white;"></i>  </div>
-                    </div>
-                </footer>
+    <div class="container">
+      <h1>Ödeme Sayfası</h1>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <form>
+            <div class="mb-3">
+              <label for="cardNumber" class="form-label">Kart Numarası</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cardNumber"
+                placeholder="Kart Numarası"
+                required
+              />
             </div>
+            <div class="mb-3">
+              <label for="expiryDate" class="form-label"
+                >Son Kullanma Tarihi</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="expiryDate"
+                placeholder="MM/YY"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="cvv" class="form-label">CVV</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cvv"
+                placeholder="CVV"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary">Ödeme Yap</button>
+          </form>
         </div>
-        
+      </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/d090ffa96b.js" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function(){
-            $("#name").keyup(function(){
-                var name = $("#name").val();
-                $(".credit-author").text(name)
-            });
-            $("#sktarih-ay").keyup(function(){
-                var sktay = $("#sktarih-ay").val();
-                $(".skt-ay").text(sktay)
-            });
-            $("#sktarih-yil").keyup(function(){
-                var sktyil = $("#sktarih-yil").val();
-                $(".skt-yil").text(sktyil)
-            });
-            $("#card-number").keyup(function(){
-                var cartnumber = $("#card-number").val();
-                var cartnumber1 = cartnumber.slice(0,4) + " ";
-                var cartnumber2 = cartnumber.slice(4,8) + " ";
-                var cartnumber3 = cartnumber.slice(8, 12) + " ";
-                var cartnumber4 = cartnumber.slice(12,16);
-                var cart = cartnumber1+cartnumber2+cartnumber3+cartnumber4;
-                $(".credit-card-number").text(cart)
-            });
-            $("#card-number").keyup(function(){
-                var cartnumber = $("#card-number").val();
-                var cartnumber1 = cartnumber.slice(0,1);
-                if(cartnumber1=='5'){
-                    $(".carttype").addClass("fa-cc-mastercard");
-                }
-                if(cartnumber1=='4'){
-                    $(".carttype").addClass("fa-cc-visa");
-                }
-            });
-        });
-    </script>
-    
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
