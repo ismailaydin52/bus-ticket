@@ -30,6 +30,7 @@
 		<link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
 		<link rel="stylesheet" type="text/css" href="http://localhost/BusTicket-CI/assets/datepicker/dist/css/bootstrap-datepicker.min.css">
 		<link href="http://localhost/BusTicket-CI/assets/frontend/select2/css/select2.min.css" rel="stylesheet" />
+		  
 		  <style type="text/css">
         .preloader {
             position: fixed;
@@ -64,7 +65,68 @@
             event.preventDefault(); // Formun varsayılan davranışını engelle
 
             // Formdaki veriyi al
-            var veri = $("#veri").val();
+			var veri = $("#veri").val();
+			var dizi = [];
+			dizi =veri;
+			veri =" ";
+
+			if (dizi[1] == "1") {
+				veri = veri + "kocaeli otogarından";
+				
+			}
+		else if (veri[1] == "5") {
+				
+				veri = veri + "izmir otogarından";
+				
+			}
+		else if (veri[1] == "7") {
+				  
+				veri = veri + "zonguldak otogarından";
+				
+			}
+	    else if (veri[1] == "4") {
+				
+				veri = veri + "istanbul harem otogarından";
+			}
+
+			if (dizi.includes("öö") || dizi.includes("ÖÖ")) {
+            veri = veri + " öğleden önce ";
+        } else if (dizi.includes("ös") || dizi.includes("ÖS")) {
+            veri = veri + " öğleden sonra ";
+        }
+
+		for (let index = 4; index < 12  ; index++) {
+			
+			veri = veri + dizi[index];
+			if (index == 5 || index == 7 ) {
+				veri =veri +".";
+			}
+
+			
+		}
+		veri = veri+ " tarihinde ";
+		for (let index = 12; index < 18  ; index++) {
+			
+			veri = veri + dizi[index];
+			if (index == 13 || index == 15 ) {
+				veri  =veri +":";
+			}
+		}
+		veri = veri + " saatinde ";
+		veri = veri + dizi[18] + " peronundan ";
+		for (let index = 19; index < 26  ; index++) {
+			
+			veri = veri + dizi[index];
+			if (index == 20 || index == 23 ) {
+				veri  =veri +" ";
+			}
+		}
+		veri = veri +" plakalı araçta biletiniz bulunmaktadır."
+
+
+
+
+
 
             // QR kodunu oluştur
             var qrUrl = 'https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=' + encodeURIComponent(veri);
@@ -79,6 +141,7 @@
             var top = (window.screen.height - popupHeight) / 2;
             var popupWindow = window.open('', '_blank', 'width=' + popupWidth + ', height=' + popupHeight + ', top=' + top + ', left=' + left);
             popupWindow.document.write(popupContent);
+			veri=null;
         });
     });
 </script>
