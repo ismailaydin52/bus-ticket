@@ -11,7 +11,8 @@
 
   <title>Admin Panel</title>
 
-  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
   <link href="http://localhost/BusTicket-CI/assets/backend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
@@ -289,6 +290,36 @@
 
       </div>
       <!-- End of Main Content -->
+
+      <canvas id="myChart"></canvas>
+
+<script>
+    // Grafik verilerini ve ayarlarını tanımlayın
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran'],
+            datasets: [{
+                label: 'Satışlar',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+
+
+
 
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
