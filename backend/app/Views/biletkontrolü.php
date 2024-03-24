@@ -53,7 +53,39 @@
             transform: translate(-50%, -50%);
             font: 14px arial;
         }
-  </style>	</head>
+  </style>	
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script>
+    $(document).ready(function(){
+        $("form").submit(function(event){
+            event.preventDefault(); // Formun varsayılan davranışını engelle
+
+            // Formdaki veriyi al
+            var veri = $("#veri").val();
+
+            // QR kodunu oluştur
+            var qrUrl = 'https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=' + encodeURIComponent(veri);
+
+            // Popup içeriği oluştur
+            var popupContent = '<div style="text-align:center;"><img src="' + qrUrl + '"></div>';
+
+            // Popup penceresini aç
+            var popupWidth = 250;
+            var popupHeight = 250;
+            var left = (window.screen.width - popupWidth) / 2;
+            var top = (window.screen.height - popupHeight) / 2;
+            var popupWindow = window.open('', '_blank', 'width=' + popupWidth + ', height=' + popupHeight + ', top=' + top + ', left=' + left);
+            popupWindow.document.write(popupContent);
+        });
+    });
+</script>
+
+
+
+</head>
 	<body>
 		<!-- navbar -->
 		<header id="header" id="home">
@@ -74,7 +106,9 @@
 			      </nav><!-- #nav-menu-container -->		    		
 		    	</div>
 		    </div>
-		  </header><!-- #header -->			<section class="service-area section-gap relative">
+		  </header><!-- #header -->			
+		  
+		  <section class="service-area section-gap relative">
 			<div class="overlay overlay-bg"></div>
 			<div class="container">
 				<div class="row d-flex justify-content-center">
@@ -85,18 +119,22 @@
 					   <i class="fas fa-ticket"></i> Bileti Kontrol Et 
 					  </div>
 					  <div class="card-body">
-					    <form action="http://localhost/myci5/public/biletkontrolü" method="post">
-									<div class="form-group">
-										<label for="exampleInputEmail1">PNR Kodunu Girin</label>
-										<input type="text" id="" class="form-control" id="" name="kodetiket" placeholder="Ticket Code" required="">
-									</div>
-									<button type="submit" class="btn btn-success pull-right">Kontrol Et </button> 
-								</form>
+
+					  <form action="http://localhost/myci5/public/biletkontrolü" method="post">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">PNR Kodunu Girin</label>
+                        <input type="text" id="veri" class="form-control" name="kodetiket" placeholder="Ticket Code" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">QR Kodu Oluştur</button>
+                </form>	
 					  </div>
 					</div>
 					</div>
 			</section>
-			<!-- End banner Area -->
+
+
+
+			
 			
 			<!--footer Area --> 
 						<footer class="footer-area section-gap">
