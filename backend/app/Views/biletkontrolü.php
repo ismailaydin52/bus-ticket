@@ -15,7 +15,7 @@
 		<meta charset="UTF-8">
 		
 		
-		<title>Get Tickets</title>
+		<title>Bilet Kontrolü</title>
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 		<!--CSS-->
 		<link rel="stylesheet" type="text/css" href="http://localhost/BusTicket-CI/assets/frontend/datepicker/dcalendar.picker.css">
@@ -163,7 +163,7 @@
 			          <li><a href="http://localhost/myci5/public/g%C3%BCzergahlar">Güzergahlar</a></li>
 			          <li class="menu"><a href="http://localhost/myci5/public/seferkontrol">Bilet Bilgileri</a></li>
 			            
-				  	  <li class="menu wobble animated"><a href="http://localhost/myci5/public/kayıtol">Kayıt Ol</a></li>
+				  	  <li><a href="http://localhost/myci5/public/kayıtol">Kayıt Ol</a></li>
  					  <li><a href="http://localhost/myci5/public/login">Login</a></li>
 				  	  			        </ul>
 			      </nav><!-- #nav-menu-container -->		    		
@@ -251,11 +251,7 @@
 					</div>
 				</div>
 			</footer>
-			<div class="preloader">
-			<div class="loading">
-				<img src="http://localhost/BusTicket-CI/assets/frontend/img/preloader.gif" width="100">
-				<p>Lütfen Bekleyin...</p> 
-			</div>
+			
 		</div>	
 			<!-- End footer Area -->			<!-- js -->
 			<script src="http://localhost/BusTicket-CI/assets/frontend/js/vendor/jquery-2.2.4.min.js"></script>
