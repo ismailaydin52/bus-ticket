@@ -9,10 +9,9 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Home</title>
+  <title>Admin Panel</title>
 
-  <!-- css -->
-  <!-- Custom fonts for this template-->
+  
   <link href="http://localhost/BusTicket-CI/assets/backend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
@@ -55,7 +54,7 @@
     <ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar" style="background-color: #1c86ee;">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="http://localhost/BusTicket-CI/backend/home">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="http://localhost/myci5/public/">
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-bus"></i>
         </div>
@@ -73,10 +72,10 @@
           <a class="nav-link" href="http://localhost/BusTicket-CI/backend/bus">
             <i class="fas fa fa-bus"></i>
             <span>Toplam Yolcu Sayısı</span></a>
-            <a class="nav-link" href="http://localhost/BusTicket-CI/backend/rute">
+            <a class="nav-link" href="http://localhost/myci5/public/admin/adminseferler">
               <i class="fas fa fa-compass"></i>
               <span>Sefer Sayıları</span></a>
-              <a class="nav-link" href="http://localhost/BusTicket-CI/backend/jadwal">
+              <a class="nav-link" href="http://localhost/myci5/public/admin/soforliste"> 
                 <i class="fas fa fa-clipboard-list"></i>
                 <span>Şöför Listesi</span></a>
         <a class="nav-link" href="http://localhost/BusTicket-CI/backend/order">
@@ -89,28 +88,25 @@
           <i class="fa fa-dollar-sign"></i>
           <span>Ödeme Listesi</span></a>
               </li>
-      <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block" style="background-color: #1c86ee;">
 
-      <!-- Sidebar Toggler (Sidebar) -->
+      
       <div class="text-center d-none d-md-inline">
         
         <button class="rounded-circle border-0" id="sidebarToggle" style="background-color: #1c86ee;"></button>
       </div>
 
     </ul>
-    <!-- End of Sidebar -->
-
-    <!-- Content Wrapper -->
+    
     <div id="content-wrapper" class="d-flex flex-column" >
 
-      <!-- Main Content -->
+    
       <div id="content">
 
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-          <!-- Sidebar Toggle (Topbar) -->
+          
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
@@ -130,12 +126,12 @@
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
 
-            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+          
             <li class="nav-item dropdown no-arrow d-sm-none">
               <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-search fa-fw"></i>
               </a>
-              <!-- Dropdown - Messages -->
+           
               <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
                 <form class="form-inline mr-auto w-100 navbar-search">
                   <div class="input-group">
@@ -164,8 +160,7 @@
           </ul>
 
         </nav>
-        <!-- End of Topbar -->
-        <!-- Begin Page Content -->
+       
         <div class="container-fluid">
 
           <!-- Page Heading -->
@@ -179,7 +174,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1"><a href="http://localhost/BusTicket-CI/backend/order">Tüm Yolcu Kayıtları</a></div>
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1"><a href="">Tüm Yolcu Kayıtları</a></div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">6</div>
                     </div>
                     <div class="col-auto">
@@ -190,13 +185,13 @@
               </div>
             </div>
 
-            <!-- Earnings (Monthly) Card Example -->
+            
             <div class="col-xl-4 col-md-6 mb-4">
               <div class="card border-left-success shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1"><a href="http://localhost/BusTicket-CI/backend/tiket">Rezervasyonlar</a></div>
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1"><a href="">Rezervasyonlar</a></div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
                     </div>
                     <div class="col-auto">
@@ -207,16 +202,16 @@
               </div>
             </div>
 
-            <!-- Earnings (Monthly) Card Example -->
+            
             <div class="col-xl-4 col-md-6 mb-4">
               <div class="card border-left-danger shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-danger text-uppercase mb-1"><a href="http://localhost/myci5/public/tümseferler">Rezervasyon Listesi</a></div>
+                      <div class="text-xs font-weight-bold text-danger text-uppercase mb-1"><a href="http://localhost/myci5/public/admin/allbus">Rezervasyon Listesi</a></div>
                       <div class="row no-gutters align-items-center">
                         <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">11</div>
+                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">36</div>
                         </div>
                         <div class="col">
                           
@@ -241,7 +236,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1"><a href="http://localhost/BusTicket-CI/backend/rute">Toplam Yolcu Sayısı</a></div>
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1"><a href="">Toplam Yolcu Sayısı</a></div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">13</div>
                     </div>
                     <div class="col-auto">
@@ -257,7 +252,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1"><a href="http://localhost/BusTicket-CI/backend/jadwal">Aktif Biletler</a></div>
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1"><a href="">Aktif Biletler</a></div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">24</div>
                     </div>
                     <div class="col-auto">
@@ -274,8 +269,8 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"><a href="http://localhost/BusTicket-CI/backend/bus">Sefer Listesi</a></div>
-                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">9</div>
+                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1"><a href="http://localhost/myci5/public/admin/adminseferler">Sefer Listesi</a></div>
+                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"></div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-bus fa-2x text-gray-300"></i>
@@ -306,6 +301,8 @@
 </div>
 <!-- End of Content Wrapper -->
 </div>
+<!-- End of Page Wrapper -->
+<!-- Scroll to Top Button-->
 <a class="scroll-to-top rounded" href="#page-top">
 	<i class="fas fa-angle-up"></i>
 </a>
@@ -328,7 +325,7 @@
 		</div>
 	</div>
 </div>
- 
+ <!-- End of Footer -->
 
     </div>
     <!-- End of Content Wrapper -->
@@ -356,7 +353,7 @@
 <script src="http://localhost/BusTicket-CI/assets/backend/js/demo/datatables-demo.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="http://localhost/BusTicket-CI/assets/datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<script>swal("Failed", "Incorrect Login Details!", "error");</script><script type="text/javascript">
+<script type="text/javascript"> 
 	$(document).ready(function () {
 		$(".preloader").fadeOut();
 	});
@@ -368,7 +365,6 @@
 	});
 
 </script>
-<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 	aria-hidden="true">
 	<div class="modal-dialog" role="document">

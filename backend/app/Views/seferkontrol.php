@@ -73,17 +73,17 @@
 			          <li class="menu"><a href="http://localhost/BusTicket-CI/tiket/cektiket">Bilet Bilgileri</a></li>
 			            
 				  	  <li class="menu wobble animated"><a href="http://localhost/BusTicket-CI/login/Daftar">Kayıt Ol</a></li>
- 					  <li><a href="http://localhost/BusTicket-CI/login">Login</a></li>
+ 					  <li><a href="http://localhost/myci5/public/login">Login</a></li>
 				  	  			        </ul>
-			      </nav><!-- #nav-menu-container -->		    		
+			      </nav>		    		
 		    	</div>
 		    </div>
-		  </header><!-- #header -->		<section class="service-area section-gap relative">
+		  </header>	<section class="service-area section-gap relative">
 		<div class="overlay overlay-bg" style="background-color:#fff"></div>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
-					<!-- Default Card Example -->
+					
 					<div class="card mb-5">
 						<div class="card-header">
 							<i class="fas fa-search"></i> Bilet Ara 
@@ -94,7 +94,7 @@
 								<P>Before Buying Tickets, Please have a look>> <b><i data-toggle="modal"
 											data-target="#exampleModal">How to book?</i></b></P>
 							</div>
-							<form action="http://localhost/BusTicket-CI/tiket/cekjadwal?>" method="get">
+							<form action="" method="get">
 								<div class="form-group">
 									<label for="exampleInputEmail1">Tarih Seç</label>
 									<input placeholder="Enter date" type="text" class="form-control datepicker"
@@ -131,7 +131,7 @@
 																				
 									</select>
 								</div>
-								<a href="http://localhost/BusTicket-CI/tiket" class="btn btn-danger pull-left">Geri Dön</a>
+								<a href="http://localhost/myci5/public/" class="btn btn-danger pull-left">Geri Dön</a>
 								<button type="submit" class="btn btn-primary pull-right">Ara</button> 
 							</form>
 						</div>
@@ -163,58 +163,58 @@
 									</tr>
 																		<tr>
 										<td style="text-align:center;vertical-align:middle">
-											</td>
-										<td style="vertical-align:middle;"></td>
+											Kocaeli-08:00</td>
+										<td style="vertical-align:middle;">İzmir-14:00</td>
 									</tr>
 																		<tr>
 										<td style="text-align:center;vertical-align:middle">
-											</td>
-										<td style="vertical-align:middle;"></td>
+											Kocaeli-13:00</td>
+										<td style="vertical-align:middle;">İzmir-00:00</td>
 									</tr>
 																		<tr>
 										<td style="text-align:center;vertical-align:middle">
-										</td>
-										<td style="vertical-align:middle;"></td>
+										Kocaeli-21:00</td>
+										<td style="vertical-align:middle;">İzmir-04:00</td>
 									</tr>
 																		<tr>
 										<td style="text-align:center;vertical-align:middle">
-											ONABRIDGE</td>
-										<td style="vertical-align:middle;">Neo Terminal</td>
+											İstanbul-08:00</td>
+										<td style="vertical-align:middle;">Kocaeli-12:00</td>
 									</tr>
 																		<tr>
 										<td style="text-align:center;vertical-align:middle">
-											OWODON</td>
-										<td style="vertical-align:middle;"></td>
+											İstanbul-16:00</td>
+										<td style="vertical-align:middle;">Kocaeli-20:00</td> 
 									</tr>
 																		<tr>
 										<td style="text-align:center;vertical-align:middle">
-											PRIFPUS</td>
-										<td style="vertical-align:middle;"></td>
+											İzmir-04:00</td>
+										<td style="vertical-align:middle;">istanbul-12:00</td>
 									</tr>
 																		<tr>
 										<td style="text-align:center;vertical-align:middle">
-											</td>
-										<td style="vertical-align:middle;"></td>
+											İzmir-12:00</td>
+										<td style="vertical-align:middle;">İstanbul-22:00</td>
 									</tr>
 																		<tr>
 										<td style="text-align:center;vertical-align:middle">
-											</td>
-										<td style="vertical-align:middle;"></td>
+											İzmir-20:00</td>
+										<td style="vertical-align:middle;">İstanbul-05:00</td>
 									</tr>
 																		<tr>
 										<td style="text-align:center;vertical-align:middle">
-											</td>
-										<td style="vertical-align:middle;"></td>
+											İzmir-12:00</td>
+										<td style="vertical-align:middle;">Kocaeli-20:00</td> 
 									</tr>
 																		<tr>
 										<td style="text-align:center;vertical-align:middle">
-											</td>
-										<td style="vertical-align:middle;"></td>
+											İzmir-04:00</td>
+										<td style="vertical-align:middle;">Zonguldak-12:00</td>
 									</tr>
 																		<tr>
 										<td style="text-align:center;vertical-align:middle">
-											</td>
-										<td style="vertical-align:middle;"></td>
+										İzmir-12:00	</td>
+										<td style="vertical-align:middle;">Zonguldak-20:00</td>
 									</tr>
 																	</tbody>
 							</table>
@@ -298,7 +298,7 @@
 							<div class="single-footer-widget">
 								<h4 class="text-white">Bilet Seç-Al</h4>
 								<p>
-								BUS Tickets is the largest online bus ticket booking service in the world. Trusted by more than 8 million customers globally. Bus Tickets offers booking bus tickets through the website.
+								Umuttepe Turizim ile güvenli ve sağlıklı yolculuklar dileriz.
 								</p>
 							</div>
 						</div>
@@ -370,20 +370,8 @@
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="http://localhost/BusTicket-CI/assets/frontend/select2/js/select2.min.js"></script>
 <script src="http://localhost/BusTicket-CI/assets/datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<script></script><!--Start of Tawk.to Script-->
-
-
-<!--End of Tawk.to Script-->
+<script></script>
 <script type="text/javascript">
-	$(document).ready(function () {
-		$(".preloader").fadeOut();
-	})
-	$(":submit").click(function (e) {
-		window.addEventListener("beforeunload", function (event) {
-			$(".preloader").show();
-		});
-	});
-
 </script>
 
 

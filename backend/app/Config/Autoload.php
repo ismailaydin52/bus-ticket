@@ -66,7 +66,7 @@ class Autoload extends AutoloadConfig
      * @var array<string, string>
      */
     public $classmap = [];
-
+    
     /**
      * -------------------------------------------------------------------
      * Files
@@ -96,4 +96,6 @@ class Autoload extends AutoloadConfig
      * @var list<string>
      */
     public $helpers = ['url'];
+    
+   
 }

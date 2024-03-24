@@ -12,7 +12,7 @@
 
   
   <link href="http://localhost/BusTicket-CI/assets/backend/css/sb-admin-2.min.css" rel="stylesheet">
-  
+  <!-- Custom styles for this page -->
   <link href="http://localhost/BusTicket-CI/assets/backend/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
   <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
   <link rel="stylesheet" type="text/css" href="http://localhost/BusTicket-CI/assets/datepicker/dist/css/bootstrap-datepicker.min.css">
@@ -69,16 +69,16 @@
             <a class="nav-link" href="">
               <i class="fas fa fa-compass"></i>
               <span>Sefer Sayıları</span></a>
-              <a class="nav-link" href="">
+              <a class="nav-link" href="http://localhost/BusTicket-CI/backend/jadwal">
                 <i class="fas fa fa-clipboard-list"></i>
                 <span>Şöfor Listesi</span></a>
-        <a class="nav-link" href="">
+        <a class="nav-link" href="http://localhost/BusTicket-CI/backend/order">
           <i class="fas fa-bookmark"></i>
           <span>Sefer Listesi</span></a> 
-        <a class="nav-link" href="">
+        <a class="nav-link" href="http://localhost/BusTicket-CI/backend/tiket">
           <i class="fas fa-ticket-alt"></i>
           <span>Biletler</span></a>
-        <a class="nav-link" href="">
+        <a class="nav-link" href="http://localhost/BusTicket-CI/backend/konfirmasi">
           <i class="fa fa-dollar-sign"></i>
           <span>Ödeme Listesi</span></a>
               </li>

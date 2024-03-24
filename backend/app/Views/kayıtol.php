@@ -58,16 +58,16 @@
 		    <div class="container">
 		    	<div class="row align-items-center justify-content-between d-flex">
 			      <div id="logo">
-			        <a href="http://localhost/BusTicket-CI/"><h3> <i class="fas fa-ticket-alt"></i> <b>Umuttepe Turizim</b></h3></a>
+			        <a href="http://localhost/myci5/public/"><h3> <i class="fas fa-ticket-alt"></i> <b>Umuttepe Turizim</b></h3></a>
 			      </div>
 			      <nav id="nav-menu-container">
 			        <ul class="nav-menu">
-			          <li class="menu"><a href="index.html">Home</a></li> 
-			          <li><a href="http://localhost/BusTicket-CI/tiket">Güzergahlar</a></li>
-			          <li class="menu"><a href="http://localhost/BusTicket-CI/tiket/cektiket">Bilet Bilgileri</a></li>
+			          <li class="menu"><a href="http://localhost/myci5/public/">Home</a></li> 
+			          <li><a href="http://localhost/myci5/public/güzergahlar">Güzergahlar</a></li>
+			          <li class="menu"><a href="http://localhost/myci5/public/hesabım">Bilet Bilgileri</a></li>
 			            
-				  	  <li class="menu wobble animated"><a href="http://localhost/BusTicket-CI/login/Daftar">Kayıt Ol</a></li>
- 					  <li><a href="http://localhost/BusTicket-CI/login">Login</a></li>
+				  	  <li class="menu wobble animated"><a href="http://localhost/myci5/public/kayıtol">Kayıt Ol</a></li>
+ 					  <li><a href="http://localhost/myci5/public/login">Login</a></li>
 				  	  			        </ul>
 			      </nav><!-- #nav-menu-container -->		    		
 		    	</div>
@@ -128,7 +128,7 @@
 								</form>
 								<hr>
 								<div class="text-center">
-									<p>Hesabın Var mı? <a class="" href="http://localhost/BusTicket-CI/login">Login Now</a></p>
+									<p>Hesabın Var mı? <a class="" href="http://localhost/myci5/public/login">Login Now</a></p>
 								</div>
 							</div>
 						</div>
@@ -187,11 +187,8 @@
 					</div>
 				</div>
 			</footer>
-			<div class="preloader">
-			<div class="loading">
-				<img src="http://localhost/BusTicket-CI/assets/frontend/img/preloader.gif" width="100">
-				<p>Please Wait...</p>
-			</div>
+			
+			
 		</div>	
 			<!-- End footer Area -->				<!-- js -->
 				<script src="http://localhost/BusTicket-CI/assets/frontend/js/vendor/jquery-2.2.4.min.js"></script>

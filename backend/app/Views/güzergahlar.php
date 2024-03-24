@@ -4,7 +4,7 @@
     <title>Güzergahlar</title>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJTVsBHAKFJS3yX0JWGEZ_ZAUJ7j8Lo8o&libraries=places"></script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+   
 
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
@@ -167,7 +167,7 @@
         <div style="margin-left:30% ; margin-top:5%;">
 
         <button type="button" class="btn btn-primary "  onclick="getRoute()">Güzergahı Getir</button>
-        <button type="button" class="btn btn-primary " style="margin-left: 30%;" onclick="">seferleri göster</button>
+        <a href="http://localhost/myci5/public/seferkontrol"><button type="button" class="btn btn-primary " style="margin-left: 30%;" onclick="">seferleri göster</button></a>
         </div>
       
 
@@ -190,7 +190,8 @@
 </div>
       </div>
     </div>
-    <button type="submit">koltuk seç</button>
+    <a href="http://localhost/myci5/public/koltuksec">
+    <button type="submit">koltuk seç</button></a>
 </div>
         
 <style>

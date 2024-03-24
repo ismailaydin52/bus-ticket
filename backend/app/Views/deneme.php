@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
       rel="stylesheet"
     />
-    <link href="http://localhost/myci5/public/login">
+    <link href="login.html">
     <!--
 		CSS
 		============================================= -->
@@ -133,7 +133,7 @@
                 <a href="http://localhost/myci5/public/">Home</a>
               </li>
               <li>
-                <a href="http://localhost/myci5/public/güzergahlar">Güzergahlar</a>
+                <a href="http://localhost/myci5/public/g%C3%BCzergahlar">Güzergahlar</a>
               </li>
               <li class="menu">
                 <a href="http://localhost/myci5/public/seferkontrol" 
@@ -142,7 +142,7 @@
               </li>
 
               <li class="menu wobble animated">
-                <a href="http://localhost/myci5/public/kayıtol" 
+                <a href="http://localhost/myci5/public/kay%C4%B1tol" 
                   >Kayıt Ol</a 
                 >
               </li>
@@ -345,3 +345,8 @@
     </script> 
   </body>
 </html>
+
+<?php
+include("baglanti.php");
+
+?>

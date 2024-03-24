@@ -44,9 +44,9 @@ class Home extends BaseController
             return view('forgetpassword');
         }
         else{
-            
+            //404 hatası ver
             echo "404 NOT Found";
-        }
+    }
     }
 
     public function allbus(){
@@ -65,11 +65,12 @@ class Home extends BaseController
     public function adminseferler(){
         return view('adminseferler');
     }
-   
-
-   
-   
-
+    public function koltuksec(){
+        return view('koltuksec');
+    }
+    public function hesabım(){
+        return view('hesabım');
+    }
 
 }
 ?>

@@ -22,9 +22,9 @@ $routes->get('admin/busdetail','Home::busdetail');
 $routes->get('admin/soforliste','Home::soforliste');
 $routes->get('güzergahlar/odeme','Home::odeme');
 $routes->get('admin/adminseferler','Home::adminseferler');
-
-
-
+$routes->get('koltuksec','Home::koltuksec');
+$routes->get('hesabım','Home::hesabım');
+$routes->get('odeme','Home::odeme'); 
 
 
 
