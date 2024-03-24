@@ -792,9 +792,7 @@
       });
     </script>
     <style>
-      div.seatCharts-container {
-        /*min-width: 700px;*/
-      }
+      
       div.seatCharts-cell {
         height: 16px;
         width: 16px;
