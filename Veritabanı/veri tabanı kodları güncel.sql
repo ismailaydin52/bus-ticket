@@ -320,7 +320,18 @@ ALTER TABLE açığa_alınan_biletler DROP COLUMN PNR_Kodu;
 INSERT INTO açığa_alınan_biletler(TC_Kimlik_Numarası,Açık_Bilet_ID,Gidilen_Yer) values(21245556782,4,"İstanbul");
 INSERT INTO açığa_alınan_biletler(TC_Kimlik_Numarası, Açık_Bilet_ID,Gidilen_Yer) values(22344477711,5,"İzmir");
 INSERT INTO açığa_alınan_biletler(TC_Kimlik_Numarası, Açık_Bilet_ID,Gidilen_Yer) values(22344477711,5,"İzmir"); 
-
+UPDATE kart_bilgileri SET CVV=333 WHERE Kart_id=2;
+UPDATE kart_bilgileri SET CVV=443 where Kart_id=3;
+UPDATE kart_bilgileri SET CVV=123 where Kart_id=4;
+UPDATE kart_bilgileri SET CVV=555 where Kart_id=8;
+UPDATE kart_bilgileri SET CVV=189 where Kart_id=9;
+UPDATE kart_bilgileri SET CVV=190 where Kart_id=10;
+UPDATE kart_bilgileri SET son_kullanma_tarihi='2028-04-02' where Kart_id=10;
+UPDATE kart_bilgileri SET son_kullanma_tarihi='2028-04-02' where Kart_id=9;
+UPDATE kart_bilgileri SET son_kullanma_tarihi='2028-04-02' where Kart_id=8;
+UPDATE kart_bilgileri SET son_kullanma_tarihi='2028-04-02' where Kart_id=4;
+UPDATE kart_bilgileri SET son_kullanma_tarihi='2028-04-02' where Kart_id=3;
+UPDATE kart_bilgileri SET son_kullanma_tarihi='2028-04-02' where Kart_id=2;
 
 
 
