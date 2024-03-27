@@ -62,29 +62,23 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
-        <a class="nav-link" href="http://localhost/myci5/public/admin"> 
+      <li class="nav-item" style="background-color: #1c86ee;">
+        <a class="nav-link" href="http://localhost/myci5/public/admin">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard </span></a>
-          <a class="nav-link" href="http://localhost/BusTicket-CI/backend/bus">
+          <span>Admin Sayfası </span></a> 
+          <a class="nav-link" href="http://localhost/myci5/public/admin/grafik1">
             <i class="fas fa fa-bus"></i>
-            <span>Otobüs Bilgisi İşlemleri</span></a>
-            <a class="nav-link" href="http://localhost/BusTicket-CI/backend/rute">
+            <span>Toplam Yolcu Sayısı</span></a>
+            <a class="nav-link" href="http://localhost/myci5/public/admin/adminseferler">
               <i class="fas fa fa-compass"></i>
-              <span>Terminal Bilgisi İşlemleri</span></a> 
-              <a class="nav-link" href="http://localhost/BusTicket-CI/backend/jadwal">
+              <span>Sefer Sayıları</span></a>
+              <a class="nav-link" href="http://localhost/myci5/public/admin/soforliste"> 
                 <i class="fas fa fa-clipboard-list"></i>
-                <span>Sefer Bilgileri</span></a> 
-        <a class="nav-link" href="http://localhost/BusTicket-CI/backend/order">
-          <i class="fas fa-bookmark"></i>
-          <span>İstatistikler</span></a> 
-        <a class="nav-link" href="http://localhost/BusTicket-CI/backend/tiket">
-          <i class="fas fa-ticket-alt"></i>
-          <span>Bilet Bilgileri</span></a>
-        <a class="nav-link" href="http://localhost/BusTicket-CI/backend/konfirmasi">
+                <span>Şöför Listesi</span></a>
+        <a class="nav-link" href="http://localhost/myci5/public/admin/grafik2">
           <i class="fa fa-dollar-sign"></i>
-          <span>Ödeme Bilgileri</span></a> 
-              </li>
+          <span>Ödeme Listesi</span></a>
+              </li> 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
@@ -112,7 +106,7 @@
           </button>
 
           <!-- Topbar Search -->
-          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" action="http://localhost/BusTicket-CI/backend/order/vieworder" method="GET">
+          <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" action="" method="GET">
             <div class="input-group">
               <input type="text" name="order" class="form-control bg-light border-0 small" placeholder="Search Order" aria-label="Search" aria-describedby="basic-addon2">
               <div class="input-group-append">
@@ -126,7 +120,6 @@
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
 
-            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
             <li class="nav-item dropdown no-arrow d-sm-none">
               <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-search fa-fw"></i>
@@ -205,8 +198,7 @@
                   <td>200</td>
                   <td>250</td>
                                       <td class="btn-success"> Active</td> 
-                                      <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B008" class="btn btn btn-info">View</a></a>
-                </td>
+                                      
               </tr>
                               <tr>
                   <td>2</td>
@@ -216,8 +208,8 @@
                   <td>150</td>
                   <td>200</td>
                                       <td class="btn-success"> Active</td> 
-                                      <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B005" class="btn btn btn-info">View</a></a>
-                </td>
+                                      
+                
               </tr>
                               <tr>
                   <td>7</td>
@@ -226,8 +218,8 @@
                   <td>50</td>
                   <td>50</td>
                                       <td class="btn-success"> Active</td> 
-                                      <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B003" class="btn btn btn-info">View</a></a>
-                </td>
+                                      
+                
               </tr>
                               <tr>
                   <td>25</td>
@@ -236,8 +228,7 @@
                   <td>200</td>
                   <td>200</td>
                                       <td class="btn-success"> Active</td> 
-                                      <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B006" class="btn btn btn-info">View</a></a>
-                </td>
+                
               </tr>
                               <tr>
                   <td>32</td>
@@ -246,8 +237,8 @@
                   <td>45</td>
                   <td>45</td>
                                       <td class="btn-success"> Active</td> 
-                                      <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B001" class="btn btn btn-info">View</a></a>
-                </td>
+                                      
+                
               </tr>
                               <tr>
                   <td>33</td>
@@ -256,8 +247,6 @@
                   <td>45</td>
                   <td>45</td>
                                       <td class="btn-success"> Active</td> 
-                                      <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B002" class="btn btn btn-info">View</a></a>
-                </td>
               </tr>
                               <tr>
                   <td>34</td>
@@ -266,8 +255,6 @@
                   <td>85</td>
                   <td>85</td>
                                       <td class="btn-success"> Active</td> 
-                                      <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B007" class="btn btn btn-info">View</a></a>
-                </td>
               </tr>
                               <tr>
                   <td>13</td>
@@ -277,8 +264,6 @@
                   <td>2024</td>
                   <td>2024</td>
                                       <td class="btn-success"> Active</td> 
-                                      <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B004" class="btn btn btn-info">View</a></a>
-                </td>
               </tr>
                               <tr>
                   <td>20</td>
@@ -287,8 +272,6 @@
                   <td>150</td>
                   <td>150</td>
                                       <td class="btn-success"> Active</td> 
-                                      <td align="center"><a href="http://localhost/BusTicket-CI/backend/bus/viewbus/B009" class="btn btn btn-info">View</a></a>
-                </td>
               </tr>
                           </tbody>
           </table>
@@ -297,7 +280,7 @@
     </div>
     <!-- /.container-fluid -->
   </div>
-  <!-- /.container-fluid -->
+  
 </div>
 <footer class="sticky-footer bg-white">
 	<div class="container my-auto">

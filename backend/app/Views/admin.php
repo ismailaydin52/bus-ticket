@@ -67,7 +67,7 @@
       <!-- Nav Item - Dashboard -->
       <li class="nav-item" style="background-color: #1c86ee;">
         <a class="nav-link" href="http://localhost/myci5/public/admin">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
+          
           <span>Admin Sayfası </span></a> 
           <a class="nav-link" href="">
             <i class="fas fa fa-bus"></i>
@@ -77,13 +77,7 @@
               <span>Sefer Sayıları</span></a>
               <a class="nav-link" href="http://localhost/myci5/public/admin/soforliste"> 
                 <i class="fas fa fa-clipboard-list"></i>
-                <span>Şöför Listesi</span></a>
-        <a class="nav-link" href="">
-          <i class="fas fa-bookmark"></i>
-          <span>Sefer Oluştur</span></a> 
-        <a class="nav-link" href="">
-          <i class="fas fa-ticket-alt"></i>
-          <span>Biletler</span></a> 
+                <span>Şöför Listesi</span></a> 
         <a class="nav-link" href="http://localhost/myci5/public/admin/grafik1"> 
           <i class="fa fa-dollar-sign"></i>
           <span>Ödeme Listesi</span></a>
@@ -123,7 +117,7 @@
             </div>
           </form>
 
-          <!-- Topbar Navbar -->
+          
           <ul class="navbar-nav ml-auto">
 
           
@@ -174,7 +168,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1"><a href="">Tüm Yolcu Kayıtları</a></div>
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tüm Yolcu Kayıtları</div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">6</div>
                     </div>
                     <div class="col-auto">
@@ -191,7 +185,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1"><a href="">Rezervasyonlar</a></div>
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Rezervasyonlar</div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
                     </div>
                     <div class="col-auto">
@@ -236,7 +230,7 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1"><a href="">Toplam Yolcu Sayısı</a></div>
+                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Toplam Yolcu Sayısı</div>
                       <div class="h5 mb-0 font-weight-bold text-gray-800">13</div>
                     </div>
                     <div class="col-auto">
