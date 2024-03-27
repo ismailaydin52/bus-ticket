@@ -84,7 +84,7 @@
         <a class="nav-link" href="">
           <i class="fas fa-ticket-alt"></i>
           <span>Biletler</span></a> 
-        <a class="nav-link" href="">
+        <a class="nav-link" href="http://localhost/myci5/public/admin/grafik1"> 
           <i class="fa fa-dollar-sign"></i>
           <span>Ödeme Listesi</span></a>
               </li>
