@@ -17,7 +17,7 @@
 		<!--
 		CSS
 		============================================= -->
-				<link rel="stylesheet" href="http://localhost/BusTicket-CI/assets/frontend/css/linearicons.css">
+		<link rel="stylesheet" href="http://localhost/BusTicket-CI/assets/frontend/css/linearicons.css">
 		<link rel="stylesheet" href="http://localhost/BusTicket-CI/assets/frontend/css/owl.carousel.css">
         <link rel="stylesheet" href="http://localhost/BusTicket-CI/assets/frontend/css/font-awesome.min.css">
         <link href="http://localhost/BusTicket-CI/assets/backend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -76,17 +76,17 @@
 		  <body>
   <div class="container" style="margin-left: 380px ; ">
     <div class="row">
-      <form action="<?php echo base_url("/hesabım")?>" method="post">
+      <form action="<?php echo base_url("/giris")?>" method="post">
       <h2 style="text-align: center;">	Kullanıcı Girişi</h2> 
       <div class="col-md-6 col-md-offset-3" style="margin-top: 50px; margin-left:200px;"> 
 <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label" name="name">Kullanıcı Adı</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Kullanıcı Adı" name="name">  
+  <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Kullanıcı Adı" name="name">  
 </div>
 <div class="mb-3">
-<label for="exampleInputPassword1" class="form-label" name="password">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" name="password"> 
-  <button type="submit" class="btn btn-primary" id="giriş-yap-butonu">Giriş Yap</button>  
+	<label for="exampleInputPassword1" class="form-label" name="password">Password</label>
+	<input name="sifre" type="password" class="form-control" id="exampleInputPassword1" name="password"> 
+	<button type="submit" class="btn btn-primary" id="giriş-yap-butonu">Giriş Yap</button>  
 </div>
 </div>
 </form>
@@ -97,11 +97,11 @@
         document.getElementById("giriş-yap-butonu").addEventListener("click", function() {
 			var username = document.getElementById("exampleFormControlInput1").value;
             var password = document.getElementById("exampleInputPassword1").value;
-			if(username == "user" && password == "1234") {
+			/*if(username == "user" && password == "1234") {
                 window.location.href = "<?php echo base_url("/hesabım")?>";
             } else {
                 alert("Kullanıcı adı veya şifre yanlış!");
-			}
+			}*/s
         })
     });
 </script>
@@ -111,18 +111,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>
-<?php
-  if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    $adminuser = test_giris($_POST["username"]);
-    $adminpassword = test_giris($_POST["password"]);
-}
 
-function test_giris($data)
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
-?>
-	</body>
+</body>

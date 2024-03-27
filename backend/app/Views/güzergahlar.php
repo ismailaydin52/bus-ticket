@@ -167,36 +167,46 @@
         <div style="margin-left:30% ; margin-top:5%;">
 
         <button type="button" class="btn btn-primary "  onclick="getRoute()">Güzergahı Getir</button>
-        <a href="http://localhost/myci5/public/seferkontrol"><button type="button" class="btn btn-primary " style="margin-left: 30%;" onclick="">seferleri göster</button></a>
+        <a href="http://localhost/myci5/public/seferkontrol"><button type="button" class="btn btn-primary " style="margin-left: 30%; display:block" id="hedef buton">seferleri göster</button></a>
+        
         </div>
       
 
         <div class="custom-container" >
-    <h2>Veri Seçimi</h2>
-    <div class="custom-scrollable-container">
+    <h2>Sefer Seçimi</h2>
+    <div class="custom-scrollable-container" >
       <div class="custom-scrollable-content">
       <div class="row">
-
+<div id="targetElement">
 <div class="block">
-    <h2>merhaba</h2>
+    <h2>Kocaeli-İstanbul</h2>
 </div>
 <div class="block">
-    <h2>merhaba</h2>
+    <h2>İstanbul-İzmir</h2>
 </div>
 <div class="block">
-    <h2>merhaba</h2>
+    <h2>İzmir-İstanbul</h2>
 </div>
-
+<div class="block">
+    <h2>İzmir-Kocaeli</h2>
+</div>
+<div class="block">
+    <h2>Kocaeli-İzmir</h2>
+</div>
+<div class="block">
+    <h2>Zonguldak-Kocaeli</h2>
+</div>
+<div class="block">
+    <h2>Kocaeli-Zonguldak</h2> 
 </div>
       </div>
+
+      </div>
     </div>
-    <a href="http://localhost/myci5/public/koltuksec">
-    <button type="submit">koltuk seç</button></a>
+    <!--<a href="http://localhost/myci5/public/koltuksec">
+    <button type="submit">koltuk seç</button></a>--> 
 </div>
         
-
-
-
 <style>
   .block {
 overflow: hidden;
@@ -259,10 +269,30 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #0056b3;
 }
+.block {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    .selected {
+        background-color: lightblue;
+    }
 
 </style>
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+        const tableRows = document.querySelectorAll('tr');
+        tableRows.forEach(row => {
+            row.addEventListener('click', function() {
+                localStorage.setItem('selectedText', this.innerText);
+                window.location.href = 'http://localhost/myci5/public/seferkontrol'; 
+            });
+        });
+    });
 
-
+</script>
       
       
 
@@ -366,4 +396,50 @@ temizleButonu.addEventListener("click", () => {
       });
     }
   </script>
+<script>
+// Butonu ve hedef öğeyi seç
+const toggleButton = document.getElementById('toggleButton');
+const targetElement = document.getElementById('targetElement');
+
+// Butona tıklandığında görünürlüğü değiştir
+toggleButton.addEventListener('click', () => {
+    if (targetElement.style.display === 'none') {
+        targetElement.style.display = 'block';
+    } else {
+        targetElement.style.display = 'none';
+    }
+});
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const tableRows = document.querySelectorAll('tr'); 
+        tableRows.forEach(row => {
+            row.addEventListener('click', function() {
+                localStorage.setItem('selectedText', this.innerText);
+                window.location.href = 'http://localhost/myci5/public/seferkontrol'; 
+            });
+        });
+    });
+</script>
+<script>
+        const blocks = document.querySelectorAll('.block');
+
+        // Her bloğa tıklama olayı ekle
+        blocks.forEach(block => {
+            block.addEventListener('click', () => {
+                // Tüm bloklardan seçili sınıfını kaldır
+                blocks.forEach(b => {
+                    b.classList.remove('selected');
+                });
+
+                // Tıklanan bloğa seçili sınıfını ekle
+                block.classList.add('selected'); 
+            });
+        });
+    </script>
+    <script>
+      
+                   
+    </script>
+
 </html>

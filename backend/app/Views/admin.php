@@ -11,8 +11,7 @@
 
   <title>Admin Panel</title>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+  
   <link href="http://localhost/BusTicket-CI/assets/backend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
@@ -70,7 +69,7 @@
         <a class="nav-link" href="http://localhost/myci5/public/admin">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Admin Sayfası </span></a> 
-          <a class="nav-link" href="http://localhost/BusTicket-CI/backend/bus">
+          <a class="nav-link" href="">
             <i class="fas fa fa-bus"></i>
             <span>Toplam Yolcu Sayısı</span></a>
             <a class="nav-link" href="http://localhost/myci5/public/admin/adminseferler">
@@ -79,13 +78,13 @@
               <a class="nav-link" href="http://localhost/myci5/public/admin/soforliste"> 
                 <i class="fas fa fa-clipboard-list"></i>
                 <span>Şöför Listesi</span></a>
-        <a class="nav-link" href="http://localhost/BusTicket-CI/backend/order">
+        <a class="nav-link" href="">
           <i class="fas fa-bookmark"></i>
           <span>Sefer Oluştur</span></a> 
-        <a class="nav-link" href="http://localhost/BusTicket-CI/backend/tiket">
+        <a class="nav-link" href="">
           <i class="fas fa-ticket-alt"></i>
           <span>Biletler</span></a> 
-        <a class="nav-link" href="http://localhost/BusTicket-CI/backend/konfirmasi">
+        <a class="nav-link" href="">
           <i class="fa fa-dollar-sign"></i>
           <span>Ödeme Listesi</span></a>
               </li>
@@ -264,7 +263,7 @@
               </div>
             </div>
 
-            <!-- Pending Requests Card Example -->
+            
             <div class="col-xl-4 col-md-6 mb-4">
               <div class="card border-left-danger shadow h-100 py-2">
                 <div class="card-body">
@@ -280,20 +279,7 @@
                 </div>
               </div>
             </div>
-
-
-
-          </div>
-
-        </div>
-        <!-- /.container-fluid -->
-
-      </div>
-      <!-- End of Main Content -->
-
-      <canvas id="myChart"></canvas>
-
-<script>
+            <script>
     // Grafik verilerini ve ayarlarını tanımlayın
     var ctx = document.getElementById('myChart').getContext('2d');
     var myChart = new Chart(ctx, {
@@ -320,6 +306,13 @@
 
 
 
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
 
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
@@ -330,7 +323,7 @@
 	</div>
 </footer>
 </div>
-<!-- End of Content Wrapper -->
+
 </div>
 
 <a class="scroll-to-top rounded" href="#page-top">

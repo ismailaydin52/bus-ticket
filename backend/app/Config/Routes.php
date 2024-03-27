@@ -24,7 +24,12 @@ $routes->get('güzergahlar/odeme','Home::odeme');
 $routes->get('admin/adminseferler','Home::adminseferler');
 $routes->get('koltuksec','Home::koltuksec');
 $routes->get('hesabım','Home::hesabım');
-$routes->get('odeme','Home::odeme'); 
+$routes->post('giris','Home::giris');
+$routes->get('odeme','Home::odeme');
+$routes->get('admin/adminselect', 'AdminController::index');
+$routes->get('admin/grafik1','Home::grafik1');
+
+   
 
 
 

@@ -1,5 +1,8 @@
 <?php
 namespace App\Controllers;
+
+use activeloginModel;
+
 class Home extends BaseController
 {
     public function index()
@@ -70,6 +73,25 @@ class Home extends BaseController
     }
     public function hesabım(){
         return view('hesabım');
+    }
+    public function giris(){
+        $email = $_POST["email"];
+        $pasword = $_POST["sifre"];
+        $kullaniciModel = new activeloginModel;
+        $user = $kullaniciModel->giris($email, $pasword);
+        if($user["eposta"] != null){
+            return view('hesabım');
+        }
+        else{
+            return view('koltuksec');
+        }
+
+    }
+    public function admin_view(){
+        return view('admin_view');
+    }
+    public function grafik1(){
+        return view('grafik1');
     }
 
 }

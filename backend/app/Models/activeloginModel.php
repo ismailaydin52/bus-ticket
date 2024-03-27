@@ -9,7 +9,7 @@ class activeloginModel extends Model{
         $data = $this->findAll();
         foreach ($data as $row)
         {
-            if($row['username'] == $username && $row['password'] == $password)
+            if($row['eposta'] == $username && $row['Tc_Kimlik'] == $password)
             {
                 return $row;
             }

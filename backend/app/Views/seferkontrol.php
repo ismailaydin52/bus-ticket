@@ -34,15 +34,9 @@
 			.body{
 				background-color: cornflowerblue;
 			}
-        .preloader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 9999;
-             background-color: #fff; 
-        }
+        .selected{
+        background-color: yellow;
+		}
 
         .pre {
             border: 1px solid #fff ;
@@ -68,11 +62,11 @@
 			      </div>
 			      <nav id="nav-menu-container">
 			        <ul class="nav-menu">
-			          <li class="menu"><a href="index.html">Home</a></li>
-			          <li><a href="http://localhost/BusTicket-CI/tiket">Güzergahlar</a></li> 
-			          <li class="menu"><a href="http://localhost/BusTicket-CI/tiket/cektiket">Bilet Bilgileri</a></li>
+			          <li class="menu"><a href="http://localhost/myci5/public/">Home</a></li>
+			          <li><a href="http://localhost/myci5/public/g%C3%BCzergahlar">Güzergahlar</a></li> 
+			          <li class="menu"><a href="http://localhost/myci5/public/login">Bilet Bilgileri</a></li>
 			            
-				  	  <li class="menu wobble animated"><a href="http://localhost/BusTicket-CI/login/Daftar">Kayıt Ol</a></li>
+				  	  <li class="menu wobble animated"><a href="http://localhost/myci5/public/kayıtol">Kayıt Ol</a></li>
  					  <li><a href="http://localhost/myci5/public/login">Login</a></li>
 				  	  			        </ul>
 			      </nav>		    		
@@ -131,9 +125,10 @@
 																				
 									</select>
 								</div>
-								<a href="http://localhost/myci5/public/" class="btn btn-danger pull-left">Geri Dön</a>
-								<button type="submit" class="btn btn-primary pull-right">Ara</button> 
+								<a href="http://localhost/myci5/public/g%C3%BCzergahlar" class="btn btn-danger pull-left" >Geri Dön</a>
+								<button type="submit" class="btn btn-primary pull-right">Tarih Seç</button> 
 							</form>
+							<a href="http://localhost/myci5/public/koltuksec"> <button type="submit" class="btn btn-primary pull-middle">koltuk seç</button></a>
 						</div>
 					</div>
 				</div>
@@ -143,7 +138,7 @@
 							<i class="fas fa-info"></i> Kalkış Varış Listesi 
 						</div>
 						<div class="card-body">
-							<table class="table table-bordered table-condensed" style="font-size:12px;" id="mydata">
+							<table class="table table-bordered table-condensed" style="font-size:12px;" id="mydata" class='block'>
 								<thead>
 									<tr>
 										<th style="text-align:center;">Kalkış</th>
@@ -151,67 +146,67 @@
 									</tr>
 								</thead>
 								<tbody>
-																		<tr>
+																		<tr class="seferler">
 										<td style="text-align:center;vertical-align:middle">
 											 Kocaeli-06:00</td>
 										<td style="vertical-align:middle;">İstanbul-08:00</td> 
 									</tr>
-																		<tr>
+																		<tr class="seferler">
 										<td style="text-align:center;vertical-align:middle">
 											Kocaeli-14:00</td>
 										<td style="vertical-align:middle;">İstanbul-16:00</td> 
 									</tr>
-																		<tr>
+																		<tr class="seferler">
 										<td style="text-align:center;vertical-align:middle">
 											Kocaeli-08:00</td>
 										<td style="vertical-align:middle;">İzmir-14:00</td>
 									</tr>
-																		<tr>
+																		<tr class="seferler">
 										<td style="text-align:center;vertical-align:middle">
 											Kocaeli-13:00</td>
 										<td style="vertical-align:middle;">İzmir-00:00</td>
 									</tr>
-																		<tr>
+																		<tr class="seferler">
 										<td style="text-align:center;vertical-align:middle">
 										Kocaeli-21:00</td>
 										<td style="vertical-align:middle;">İzmir-04:00</td>
 									</tr>
-																		<tr>
+																		<tr class="seferler">
 										<td style="text-align:center;vertical-align:middle">
 											İstanbul-08:00</td>
 										<td style="vertical-align:middle;">Kocaeli-12:00</td>
 									</tr>
-																		<tr>
+																		<tr class="seferler">
 										<td style="text-align:center;vertical-align:middle">
 											İstanbul-16:00</td>
 										<td style="vertical-align:middle;">Kocaeli-20:00</td> 
 									</tr>
-																		<tr>
+																		<tr class="seferler">
 										<td style="text-align:center;vertical-align:middle">
 											İzmir-04:00</td>
 										<td style="vertical-align:middle;">istanbul-12:00</td>
 									</tr>
-																		<tr>
+																		<tr class="seferler">
 										<td style="text-align:center;vertical-align:middle">
 											İzmir-12:00</td>
 										<td style="vertical-align:middle;">İstanbul-22:00</td>
 									</tr>
-																		<tr>
+																		<tr class="seferler">
 										<td style="text-align:center;vertical-align:middle">
 											İzmir-20:00</td>
 										<td style="vertical-align:middle;">İstanbul-05:00</td>
 									</tr>
-																		<tr>
+																		<tr class="seferler">
 										<td style="text-align:center;vertical-align:middle">
 											İzmir-12:00</td>
 										<td style="vertical-align:middle;">Kocaeli-20:00</td> 
 									</tr>
-																		<tr>
+																		<tr class="seferler">
 										<td style="text-align:center;vertical-align:middle">
 											İzmir-04:00</td>
 										<td style="vertical-align:middle;">Zonguldak-12:00</td>
 									</tr>
-																		<tr>
+																		<tr class="seferler">
 										<td style="text-align:center;vertical-align:middle">
 										İzmir-12:00	</td>
 										<td style="vertical-align:middle;">Zonguldak-20:00</td>
@@ -314,27 +309,7 @@
 								</p>
 							</div>
 						</div>						
-						<div class="col-lg-5  col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h4 class="text-white">Newsletter</h4>
-								<p>You can trust us. we only send  offers, not a single spam.</p>
-								<div class="d-flex flex-row" id="mc_embed_signup">
-										<form class="navbar-form" novalidate="true" action="" method="post">
-									    <div class="input-group add-on">
-									      	<input class="form-control" placeholder="Email address"  type="email">
-											<div style="position: absolute; left: -5000px;">
-												<input name="" tabindex="-1" value="" type="text">
-											</div>
-									      <div class="input-group-btn">
-									        <button class="genric-btn primary circle arrow"><span class="lnr lnr-arrow-right"></span></button>
-									      </div>
-									    </div>
-									      <div class="info mt-20"></div>									    
-									  </form>
-
-								</div>
-							</div>
-						</div>						
+									
 					</div>
 					<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
             <p class="footer-text m-0"><span>&copy; 2024 Umuttepe Turizim Acentası </span> </p>
@@ -426,9 +401,19 @@
 					<w:worddocument></w:worddocument>
 				</div>
 			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-			</div>
 		</div>
 	</div>
 </div>
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+        const selectedText = localStorage.getItem('selectedText');
+        if (selectedText) {
+            const tableRows = document.querySelectorAll('tr');
+            tableRows.forEach(row => {
+                if (row.innerText.includes(selectedText)) {
+                    row.classList.add('selected');
+                }
+            });
+        }
+    });
+</script>

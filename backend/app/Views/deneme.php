@@ -9,7 +9,7 @@
     
     <link rel="shortcut icon" href="img/elements/fav.png" />
   
-    <meta name="author" content="colorlib" />
+    <meta name="author"/>
     
     <meta name="description" content="" />
     
@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
       rel="stylesheet"
     />
-    <link href="login.html">
+  
     <!--
 		CSS
 		============================================= -->
@@ -93,28 +93,13 @@
 
       }
      
-      .preloader {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 9999;
-        /* background-color: #fff; */
-      }
 
       .pre {
         border: 1px solid grey;
         min-height: 10em;
       }
 
-      .preloader .loading {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        font: 14px arial;
-      }
+      
     </style>
   </head>
   <body style="background-image: url(https://www.kocaeli.bel.tr/webfiles/userfiles/images/icerikler/Turizm%20Sube/foto%C4%9Fraf%2011.JPG);">
@@ -141,7 +126,7 @@
                 >
               </li>
 
-              <li class="menu wobble animated">
+              <li>
                 <a href="http://localhost/myci5/public/kay%C4%B1tol" 
                   >Kayıt Ol</a 
                 >
@@ -258,31 +243,6 @@
             </div>
           </div>
           <div class="col-lg-5 col-md-6 col-sm-6">
-            <div class="single-footer-widget">
-              <h4 class="text-white">Newsletter</h4>
-              <p>You can trust us. we only send offers, not a single spam.</p>
-              <div class="d-flex flex-row" id="mc_embed_signup">
-                <form
-                  class="navbar-form"
-                  novalidate="true"
-                  action=""
-                  method="post"
-                >
-                  <div class="input-group add-on">
-                    <input
-                      class="form-control"
-                      placeholder="Email address"
-                      type="email"
-                    />
-                    <div style="position: absolute; left: -5000px">
-                      <input name="" tabindex="-1" value="" type="text" />
-                    </div>
-                    <div class="input-group-btn">
-                      <button class="genric-btn primary circle arrow">
-                        <span class="lnr lnr-arrow-right"></span>
-                      </button>
-                    </div>
-                  </div>
                   <div class="info mt-20"></div>
                 </form>
               </div>
@@ -330,8 +290,6 @@
     <script src="http://localhost/BusTicket-CI/assets/frontend/select2/js/select2.min.js"></script>
     <script src="http://localhost/BusTicket-CI/assets/datepicker/dist/js/bootstrap-datepicker.min.js"></script>
     <script></script>
-    <!--Start of Tawk.to Script-->
-
   
     <script type="text/javascript">
       $(document).ready(function () {
