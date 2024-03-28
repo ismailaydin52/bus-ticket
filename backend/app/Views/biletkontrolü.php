@@ -166,7 +166,7 @@
 				  	  <li><a href="http://localhost/myci5/public/kayıtol">Kayıt Ol</a></li>
  					  <li><a href="http://localhost/myci5/public/login">Login</a></li>
 				  	  			        </ul>
-			      </nav><!-- #nav-menu-container -->		    		
+			      </nav>	    		
 		    	</div>
 		    </div>
 		  </header><!-- #header -->			
@@ -279,7 +279,6 @@
 <script></script>
 
 
-<!--End of Tawk.to Script-->
 <script type="text/javascript">
 	$(document).ready(function () {
 		$(".preloader").fadeOut();

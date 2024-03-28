@@ -405,15 +405,23 @@
 	</div>
 </div>
 <script>
-	document.addEventListener('DOMContentLoaded', function() {
-        const selectedText = localStorage.getItem('selectedText');
-        if (selectedText) {
-            const tableRows = document.querySelectorAll('tr');
-            tableRows.forEach(row => {
-                if (row.innerText.includes(selectedText)) {
-                    row.classList.add('selected');
-                }
-            });
+document.addEventListener('DOMContentLoaded', function() {
+    const selectedText = localStorage.getItem('selectedText');
+    const tableCells = document.querySelectorAll('td');
+    const blocks = document.querySelectorAll('.block');
+
+    tableCells.forEach(cell => {
+        if (cell.innerText === selectedText) {
+            cell.style.backgroundColor = 'yellow'; // veya istediğiniz başka bir renk
         }
     });
+
+    blocks.forEach(block => {
+        if (block.innerText === selectedText) {
+            block.classList.add('selected');
+        }
+    });
+});
+
+
 </script>

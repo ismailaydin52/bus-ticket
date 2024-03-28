@@ -101,7 +101,6 @@
                       .join(" ")
                   );
 
-                //basically a wrapper function
                 fn.data = function () {
                   return fn.settings.data;
                 };
@@ -496,7 +495,6 @@
             tabIndex: 0,
           });
 
-          //when container's focused, move focus to the first seat
           fn.focus(function () {
             if (fn.attr("aria-activedescendant")) {
               seats[fn.attr("aria-activedescendant")].blur();
