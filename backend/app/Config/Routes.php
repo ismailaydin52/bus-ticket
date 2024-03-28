@@ -1,6 +1,7 @@
 <?php
 
 use CodeIgniter\Router\RouteCollection;
+use Iyzipay\Model\Payment;
 
 /**
  * @var RouteCollection $routes
@@ -28,7 +29,7 @@ $routes->post('giris','Home::giris');
 $routes->get('odeme','Home::odeme');
 $routes->get('admin/adminselect', 'AdminController::index');
 $routes->get('admin/grafik1','Home::grafik1');
-
+$routes->get('odemeyapalim', 'Home::payment');
    
 
 

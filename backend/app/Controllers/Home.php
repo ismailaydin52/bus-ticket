@@ -2,7 +2,8 @@
 namespace App\Controllers;
 
 use activeloginModel;
-
+use Config\View;
+use App\Libraries\Iyzico;
 class Home extends BaseController
 {
     public function index()
@@ -92,6 +93,66 @@ class Home extends BaseController
     }
     public function grafik1(){
         return view('grafik1');
+    }
+
+    public function payment(){
+        $iyzico = new Iyzico();
+        $iyzico -> setForm([
+            'conversationID' =>'123456789' ,
+            'price' => '10' ,
+            'paidprice' => '20',
+            'basketID' => 'SPT123456'
+        ])
+        ->setBuyer([
+            'id'=> 123,
+            'name' =>'ahmet',
+            'surname' =>'yılmaz',
+            'identity' => '12345678901',
+            'email' => 'ayilmazyilmaz@gmail.com',
+            'phone' =>'+905555555555',
+            'country' => 'Turkey',
+            'city' => 'Istanbul',
+            'ip' => $this->request->getIPAdress()
+        ])
+        ->setShipping([
+            'name' =>'ahmet',
+            'city' => 'Istanbul',
+            'country' => 'Turkey',
+            'address' => 'Uskudar/İstiklal Caddesi'
+        ])
+        ->setBilling([
+            'name' =>'ahmet',
+            'city' => 'Istanbul',
+            'country' => 'Turkey',
+            'address' => 'Uskudar/İstiklal Caddesi'
+        ])
+        ->setItems([
+            [
+                'id' =>789,
+                'name' =>'bilet1',
+                'category' => 'otobus',
+                'price' => '40.0'  
+            ],
+            [
+                'id' =>789,
+                'name' =>'bilet2',
+                'category' => 'otobus',
+                'price' => '40.0'  
+            ],
+            [
+                'id' =>789,
+                'name' =>'bilet3',
+                'category' => 'otobus',
+                'price' => '40.0'  
+            ]
+        ])
+        ->paymentForm();
+
+
+        return view('odemeyapalim', [
+          'paymentContent' =>$iyzico->getCheckoutFormContent(),
+          'paymentStatus' => $iyzico->getPaymentStatus(),
+        ]);
     }
 
 }
