@@ -54,17 +54,17 @@
   </style>	</head>
 	<body>
 		<!-- navbar -->
-		<header id="header" id="home">
+		<header id="header" id="home" style="background-color:#007FFF"> 
 		    <div class="container">
 		    	<div class="row align-items-center justify-content-between d-flex">
 			      <div id="logo">
-			        <a href="http://localhost/myci5/public/"><h3> <i class="fas fa-ticket-alt"></i> <b>Umuttepe Turizim</b></h3></a>
+			        <a href="http://localhost/myci5/public/"><h3> <i class="fas fa-ticket-alt"></i> <b style="color: azure;">Umuttepe Turizim</b></h3></a>
 			      </div>
 			      <nav id="nav-menu-container">
 			        <ul class="nav-menu">
 			          <li class="menu"><a href="http://localhost/myci5/public/">Home</a></li> 
 			          <li><a href="http://localhost/myci5/public/güzergahlar">Güzergahlar</a></li>
-			          <li class="menu"><a href="http://localhost/myci5/public/hesabım">Bilet Bilgileri</a></li>
+			          <li class="menu"><a href="http://localhost/myci5/public/login">Bilet Bilgileri</a></li>
 			            
 				  	  <li class="menu wobble animated"><a href="http://localhost/myci5/public/kayıtol">Kayıt Ol</a></li>
  					  <li><a href="http://localhost/myci5/public/login">Login</a></li>
@@ -83,7 +83,7 @@
 								<i class="fas fa-user"></i> Müşteri Girişi 
 							</div>
 							<div class="card-body">
-								<form action="http://localhost/BusTicket-CI/login/daftar" method="post">
+								<form action="" method="post">
 									<div class="form-group">
 										<div class="form-group">
 											<div class="form-label-group">
@@ -113,7 +113,7 @@
 									</div>
 									<div class="form-group">
 										<div class="form-label-group">
-											<input type="text" id="username" name="username" class="form-control" required="" placeholder="Username" >
+											<input type="text" id="username" name="username" class="form-control"  placeholder="Username" >
 																					</div>
 									</div>
 									<div class="form-group row">
@@ -124,7 +124,7 @@
 											<input type="password" class="form-control form-control-user" name="password2" placeholder="Repeat Password">
 										</div>
 									</div>
-									<small class="text-danger pl-3"></small>									<button class="btn btn-info btn-block">Kayıt Ol</button>
+									<small class="text-danger pl-3"></small>									<button class="btn btn-info btn-block" style="color: #fff;"><a href="http://localhost/myci5/public/login">Kayıt Ol</a></button>
 								</form>
 								<hr>
 								<div class="text-center">

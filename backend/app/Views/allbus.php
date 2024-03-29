@@ -7,12 +7,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Sefer Detay</title>
-    <!-- css -->
-    <!-- Custom fonts for this template-->
+  
   <link href="http://localhost/BusTicket-CI/assets/backend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-  <!-- Custom styles for this template-->
+ 
   <link href="http://localhost/BusTicket-CI/assets/backend/css/sb-admin-2.min.css" rel="stylesheet">
   <!-- Custom styles for this page -->
   <link href="http://localhost/BusTicket-CI/assets/backend/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
@@ -33,14 +32,6 @@
             border: 1px solid grey;
             min-height: 10em;
         }
-
-        .preloader .loading {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            font: 14px arial;
-        }
   </style>  </head>
   <body id="page-top">
     <!-- navbar -->
@@ -60,8 +51,6 @@
 
       <!-- Divider -->
       <hr class="sidebar-divider my-0">
-
-      <!-- Nav Item - Dashboard -->
       <li class="nav-item" style="background-color: #1c86ee;">
         <a class="nav-link" href="http://localhost/myci5/public/admin">
           <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -78,7 +67,7 @@
         <a class="nav-link" href="http://localhost/myci5/public/admin/grafik2">
           <i class="fa fa-dollar-sign"></i>
           <span>Ödeme Listesi</span></a>
-              </li> 
+              </li>
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
@@ -89,9 +78,7 @@
       </div>
 
     </ul>
-    <!-- End of Sidebar -->
-
-    <!-- Content Wrapper -->
+   
     <div id="content-wrapper" class="d-flex flex-column">
 
       <!-- Main Content -->
@@ -100,7 +87,7 @@
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-          <!-- Sidebar Toggle (Topbar) -->
+         
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
@@ -117,14 +104,15 @@
             </div>
           </form>
 
-          <!-- Topbar Navbar -->
+          
           <ul class="navbar-nav ml-auto">
 
+           
             <li class="nav-item dropdown no-arrow d-sm-none">
               <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-search fa-fw"></i>
               </a>
-              <!-- Dropdown - Messages -->
+           
               <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
                 <form class="form-inline mr-auto w-100 navbar-search">
                   <div class="input-group">
@@ -169,12 +157,8 @@
     <!-- Begin Page Content -->
     <div class="container-fluid">
       <h1 class="h5 text-gray-800">Sefer Detay</h1>
-      <div class="card shadow mb-4">
-        <div class="card-header py-3">
-          <button type="button" class="btn btn-success pull-right" data-toggle="modal" data-target="#ModalTujuan">
-          Otobüs Ekle 
-          </button>
-        </div>
+      
+        
         <div class="card-body">
           <div class="table-responsive">
             <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
@@ -186,7 +170,7 @@
                   <th>Yolcu Sayısı</th>
                   <th>Koltuk Kapasitesi</th> 
                   <th>Aktiflik</th> 
-                  <th>Detaylar</th>
+                  
                 </tr>
               </thead>
               <tbody>
@@ -198,7 +182,6 @@
                   <td>200</td>
                   <td>250</td>
                                       <td class="btn-success"> Active</td> 
-                                      
               </tr>
                               <tr>
                   <td>2</td>
@@ -208,8 +191,6 @@
                   <td>150</td>
                   <td>200</td>
                                       <td class="btn-success"> Active</td> 
-                                      
-                
               </tr>
                               <tr>
                   <td>7</td>
@@ -218,8 +199,6 @@
                   <td>50</td>
                   <td>50</td>
                                       <td class="btn-success"> Active</td> 
-                                      
-                
               </tr>
                               <tr>
                   <td>25</td>
@@ -228,7 +207,6 @@
                   <td>200</td>
                   <td>200</td>
                                       <td class="btn-success"> Active</td> 
-                
               </tr>
                               <tr>
                   <td>32</td>
@@ -238,7 +216,7 @@
                   <td>45</td>
                                       <td class="btn-success"> Active</td> 
                                       
-                
+                </td>
               </tr>
                               <tr>
                   <td>33</td>
@@ -247,6 +225,7 @@
                   <td>45</td>
                   <td>45</td>
                                       <td class="btn-success"> Active</td> 
+                </td>
               </tr>
                               <tr>
                   <td>34</td>
@@ -255,6 +234,8 @@
                   <td>85</td>
                   <td>85</td>
                                       <td class="btn-success"> Active</td> 
+                                      
+                </td>
               </tr>
                               <tr>
                   <td>13</td>
@@ -264,6 +245,8 @@
                   <td>2024</td>
                   <td>2024</td>
                                       <td class="btn-success"> Active</td> 
+                                      
+                </td>
               </tr>
                               <tr>
                   <td>20</td>
@@ -271,14 +254,13 @@
                   <td>35 XYZ 225 </td>
                   <td>150</td>
                   <td>150</td>
-                                      <td class="btn-success"> Active</td> 
+                                      <td class="btn-success"> Active</td>                 </td>
               </tr>
                           </tbody>
           </table>
         </div>
       </div>
     </div>
-    <!-- /.container-fluid -->
   </div>
   
 </div>
@@ -310,16 +292,12 @@
 			<div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
 			<div class="modal-footer">
 				<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-				<a class="btn btn-danger" href="http://localhost/BusTicket-CI/backend/login/logout">Logout</a>
+				<a class="btn btn-danger" href="">Logout</a>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="preloader">
-	<div class="loading">
-		<img src="http://localhost/BusTicket-CI/assets/frontend/img/preloader.gif" width="100">
-		<p>Lütfen Bekleyin...</p>
-	</div>
+
 </div><!-- End of Footer -->
 <!-- Modal -->
 <div class="modal fade" id="ModalTujuan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">

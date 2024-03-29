@@ -12,6 +12,90 @@
         <div class="row">
             <h1>Ödeme Sayfası</h1><hr><br>
         </div>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+button{
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 6px 12px 0px rgb(0 0 0 / 13%);
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+button:hover{
+    background-color: orange;
+}
+#popup{
+    display: none;
+}
+.popup-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(96 95 127 / 70%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.popup{
+    background-color: #ffffff;
+    padding: 20px 30px;
+    width: 50%;
+    border-radius: 15px;
+}
+.close-popup{
+    display: flex;
+    justify-content: flex-end;
+}
+.close-popup a{
+    font-size: 1.2rem;
+    background-color: cornflowerblue;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+}
+.popup > h2{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+.popup > p{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.popup-btn{
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid rebeccapurple;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 10px 0px;
+    transition: .2s all ease-in;
+}
+.popup-btn:hover{
+    background-color: cornflowerblue;
+    color: #fff;
+}
+        </style>
         <div class="row">
             <form>
                 <div class="row">
@@ -44,36 +128,27 @@
                     </div>
                 </div><br>
                 <div class="mb-4">
-                    <button type="submit" class="btn btn-primary">
-                        Kredi Kartıyla Öde
-                    </button>
+                
+    </div>
+</div>          
                     
                 </div>
             </form>
-        </div>
-        <br>
-        <div class="credit-card-wrap mt-4">
-            <div class="mk-icon-world-map"></div>
-            <div class="credit-card-inner">
-                <header class="header">
-                    <div class="credit-logo">
-                        <div class="shape"><span class="txt"></span></div> <span class="text">Umuttepe Turizim</span>
-                    </div>
-                </header>
-                <div class="mk-icon-sim"></div>
-                <div class="credit-font credit-card-number"></div>
-                <footer class="footer">
-                    <div class="clearfix">
-                        <div class="pull-left">
-                            <div class="credit-card-date"><span class="title">Son Kullanma Tarihi<br>AY / YIL</span><span class="credit-font">  <span class="skt-ay"></span> / <span class="skt-yil"></span> </span></div>
-                            <div class="credit-font credit-author"></div>
-                        </div>
-                        <div class="pull-right"><i class="carttype fab" style="font-size: 45px; color:white;"></i>  </div>
-                    </div>
-                </footer>
+            <button type="submit" class="btn btn-primary" id="clickBtn" style="margin-left: 150px;">Kredi Kartıyla Öde</button>
+            <div id="popup">
+            <div class="popup-container">
+            <div class="popup">
+                <div class="close-popup" id="closeBtn"><a href="#">X</a></div>
+                <h2>Ödeme Alındı</h2>
+                <p>
+                    Ödemeniz başarıyla alındı! Biletinizi kontrol edin
+                </p>
+                <a href="http://localhost/myci5/public/biletkontrol%C3%BC" class="popup-btn">Bilet Kontrolü</a> 
             </div>
         </div>
-        
+    </div>
+        </div>
+        <br>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -118,6 +193,25 @@
             });
         });
     </script>
+    <script>
+       const clickBtn = document.getElementById("clickBtn");
+const popup = document.getElementById("popup");
+const closeBtn = document.getElementById("closeBtn");
+
+clickBtn.addEventListener('click', ()=>{
+    popup.style.display = 'block';
+});
+closeBtn.addEventListener('click', ()=>{
+    popup.style.display = 'none';
+});
+popup.addEventListener('click', ()=>{
+    popup.style.display = 'none';
+});
+
+
+    </script>
+
+
     
 
   </body>

@@ -1148,7 +1148,7 @@
                 <h2>
                   Toplam: <b><span id="total">0</span>TL</b>
                 </h2>
-                 <a href="http://localhost/myci5/public/odeme">
+                 <a href="http://localhost/myci5/public/odeme"> 
                 <button
                   type="button"
                   id="checkout-button"

@@ -104,12 +104,12 @@
   </head>
   <body style="background-image: url(https://www.kocaeli.bel.tr/webfiles/userfiles/images/icerikler/Turizm%20Sube/foto%C4%9Fraf%2011.JPG);">
     <!-- navbar -->
-    <header id="header" id="home">
+    <header id="header" id="home" style="background-color:#007FFF"> 
       <div class="container">
         <div class="row align-items-center justify-content-between d-flex">
           <div id="logo">
             <a href="http://localhost/myci5/public/" 
-              ><strong><b>Umuttepe Turizim</b></strong></h3></a
+              ><strong><b style="color:azure"> <i class="fas fa-ticket-alt" style="color: white;"></i>Umuttepe Turizim</b></strong></h3></a
             >
           </div>
           <nav id="nav-menu-container">
@@ -132,6 +132,7 @@
                 >
               </li>
               <li><a href="http://localhost/myci5/public/login">Login</a></li>
+              <li><a href="http://localhost/myci5/public/adminlogin">Admin Giriş</a></li> 
               
             </ul>
           </nav>
@@ -165,58 +166,7 @@
     <section class="service-area section-gap relative">
       <div class="overlay overlay-bg"></div>
       <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-8 pb-40 header-text">
-            <h1>Bilet Alma Aşamaları</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="single-service">
-              <img
-                class="img-fluid"
-                src="http://localhost/BusTicket-CI/assets/frontend/img/b1.png"
-                width="150"
-                height="150"
-                alt=""
-              />
-              <h4>Select trip details</h4>
-              <p>
-                Enter the place of departure, destination, travel date and then
-                click 'Search'
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="single-service">
-              <img
-                class="img-fluid"
-                src="http://localhost/BusTicket-CI/assets/frontend/img/b2.png"
-                width="150"
-                height="150"
-                alt=""
-              />
-              <h4>Koltuk Seçin</h4> 
-              <p>
-                Select bus, seat, place of departure, destination, fill in
-                passenger details and click 'Payment'
-              </p>
-            </div>
-          </div>
-    
-          <div class="col-lg-4 col-md-6">
-            <div class="single-service">
-              <img
-                class="img-fluid"
-                src="http://localhost/BusTicket-CI/assets/frontend/img/b3.png"
-                width="150"
-                height="150"
-                alt=""
-              />
-              <h4>Kolay Ödeme</h4> 
-              <p>Payment can be made via ATM transfer, Internet banking.</p>
-            </div>
-          </div>
+        
         </div>
       </div>
     </section>

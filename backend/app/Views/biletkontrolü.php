@@ -151,22 +151,22 @@
 </head>
 	<body>
 		<!-- navbar -->
-		<header id="header" id="home">
+		<header id="header" id="home" style="background-color:#007FFF">
 		    <div class="container">
 		    	<div class="row align-items-center justify-content-between d-flex">
 			      <div id="logo">
-			        <a href="http://localhost/myci5/public/"><h3> <i class="fas fa-ticket-alt"></i> <b>Umuttepe Turizim</b></h3></a>
+			        <a href="http://localhost/myci5/public/"><h3> <i class="fas fa-ticket-alt" style="color: white;"></i> <b style="color: azure;">Umuttepe Turizim</b></h3></a>
 			      </div>
 			      <nav id="nav-menu-container">
 			        <ul class="nav-menu">
-			          <li class="menu"><a href="index.html">Home</a></li>
+			          <li class="menu"><a href="http://localhost/myci5/public/">Home</a></li> 
 			          <li><a href="http://localhost/myci5/public/g%C3%BCzergahlar">Güzergahlar</a></li>
 			          <li class="menu"><a href="http://localhost/myci5/public/seferkontrol">Bilet Bilgileri</a></li>
 			            
 				  	  <li><a href="http://localhost/myci5/public/kayıtol">Kayıt Ol</a></li>
  					  <li><a href="http://localhost/myci5/public/login">Login</a></li>
 				  	  			        </ul>
-			      </nav>	    		
+			      </nav><!-- #nav-menu-container -->		    		
 		    	</div>
 		    </div>
 		  </header><!-- #header -->			
@@ -222,28 +222,7 @@
 									012-1010-000-0110
 								</p>
 							</div>
-						</div>						
-						<div class="col-lg-5  col-md-6 col-sm-6">
-							<div class="single-footer-widget">
-								<h4 class="text-white">Newsletter</h4>
-								<p>You can trust us. we only send  offers, not a single spam.</p>
-								<div class="d-flex flex-row" id="mc_embed_signup">
-										<form class="navbar-form" novalidate="true" action="" method="post">
-									    <div class="input-group add-on">
-									      	<input class="form-control" placeholder="Email address"  type="email">
-											<div style="position: absolute; left: -5000px;">
-												<input name="" tabindex="-1" value="" type="text">
-											</div>
-									      <div class="input-group-btn">
-									        <button class="genric-btn primary circle arrow"><span class="lnr lnr-arrow-right"></span></button>
-									      </div>
-									    </div>
-									      <div class="info mt-20"></div>									    
-									  </form>
-
-								</div>
-							</div>
-						</div>						
+						</div>											
 					</div>
 					<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
             <p class="footer-text m-0"><span>&copy; 2024 Umuttepe Turizim Seyehat Acentası </span> </p>			
@@ -253,7 +232,7 @@
 			</footer>
 			
 		</div>	
-			<!-- End footer Area -->			<!-- js -->
+			
 			<script src="http://localhost/BusTicket-CI/assets/frontend/js/vendor/jquery-2.2.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
 	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -279,6 +258,7 @@
 <script></script>
 
 
+<!--End of Tawk.to Script-->
 <script type="text/javascript">
 	$(document).ready(function () {
 		$(".preloader").fadeOut();

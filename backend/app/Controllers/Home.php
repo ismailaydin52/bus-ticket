@@ -1,9 +1,8 @@
 <?php
 namespace App\Controllers;
 
-use activeloginModel;
-use Config\View;
-use App\Libraries\Iyzico;
+use App\Models\activeloginModel;
+
 class Home extends BaseController
 {
     public function index()
@@ -80,13 +79,33 @@ class Home extends BaseController
         $pasword = $_POST["sifre"];
         $kullaniciModel = new activeloginModel;
         $user = $kullaniciModel->giris($email, $pasword);
-        if($user["eposta"] != null){
+        $sesion = session();
+        $sesion->set('user',$user);
+        if(isset($user["eposta"])){
             return view('hesabım');
         }
         else{
-            return view('koltuksec');
+            return view('kayıtol');
         }
 
+    }
+    public function guncelle(){
+        $kullaniciModel = new activeloginModel;
+        $tcNo = $_POST["ktp"];
+        $ad = $_POST["nama"];
+        $eposta = $_POST["email"];
+        $telefon = $_POST["hp"];
+        $session = session();
+        $user = $session->get('user');
+        $id = $user['Id'];
+        $kullaniciModel->guncele($tcNo,$ad,$eposta,$telefon,$id);
+        $sesion = session();
+        $user = $session->get('user');
+        $email = $user['eposta'];
+        $pasword = $user['Tc_Kimlik'];
+        $user = $kullaniciModel->giris($email, $pasword);
+        $sesion->set('user',$user);
+        return view('hesabım');
     }
     public function admin_view(){
         return view('admin_view');
@@ -94,6 +113,13 @@ class Home extends BaseController
     public function grafik1(){
         return view('grafik1');
     }
+    public function grafik2(){
+        return view('grafik2');
+    }
+    public function kişiselbiletlerim(){
+        return view('kişiselbiletlerim');
+    }
+    
 
 }
 ?>
