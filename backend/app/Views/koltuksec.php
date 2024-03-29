@@ -1148,14 +1148,14 @@
                 <h2>
                   Toplam: <b><span id="total">0</span>TL</b>
                 </h2>
-
+                 <a href="http://localhost/myci5/public/odeme">
                 <button
                   type="button"
                   id="checkout-button"
                   class="px-4 py-4 rounded-lg bg-green-600 w-full"
                 >
                   Satin Al
-                </button>
+                </button></a>
               </form>
 
               <div id="legend" class="absolute w-1/3"></div>

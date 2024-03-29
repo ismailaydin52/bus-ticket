@@ -332,6 +332,8 @@ UPDATE kart_bilgileri SET son_kullanma_tarihi='2028-04-02' where Kart_id=8;
 UPDATE kart_bilgileri SET son_kullanma_tarihi='2028-04-02' where Kart_id=4;
 UPDATE kart_bilgileri SET son_kullanma_tarihi='2028-04-02' where Kart_id=3;
 UPDATE kart_bilgileri SET son_kullanma_tarihi='2028-04-02' where Kart_id=2;
+INSERT INTO aktif_bilet_bilgileri (Aktif_ID, Koltuk_Numarası, Kalkış_Yeri, Varış_Yeri, Ödenecek_Tutar, Yolcu_AktifID)
+VALUES (4, 33, 'Zonguldak', 'İstanbul', 550, 1);
 
 
 
